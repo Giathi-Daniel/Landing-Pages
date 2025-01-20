@@ -80,3 +80,20 @@ img {
 body.modal-open {
     overflow: hidden;
 }
+
+/* SWIPER JS */
+.swiper-container {
+    inline-size: 100%;
+    padding: 1rem;
+}
+
+.swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--color-bg-button);
+}

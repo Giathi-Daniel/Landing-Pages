@@ -36,3 +36,29 @@ document.getElementById("close-modal").addEventListener("click", function () {
     document.getElementById("contact-modal").style.display = "none";
     document.body.classList.remove("modal-open"); // Enable scrolling
 });
+
+// SWIPERJS
+const swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    loop: true,
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+    },
+});
+

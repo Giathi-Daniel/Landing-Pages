@@ -13,6 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
+    <!-- ====== SWIPERJS CDN ======= -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- ====== FONTAWESOME CDN ======= -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
@@ -331,54 +338,107 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
             </p>
         </div>
-        <div class="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-3">
-            <article class="flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                <p class="text-gray-400">
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                </p>
-                <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                    <div class="flex items-center justify-between gap-3">
-                        <img src="./images/user1.png" alt="micheal" class="w-12">
-                        <div class="flex items-start justify-between flex-col">
-                            <h3 class="text-white font-semibold">Micheal Smith</h3>
-                            <p class="text-gray-500 text-sm">Manager, Escape</p>
+        <div class="swiper swiper-container mt-3">
+            <div class="swiper-wrapper flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-3">
+                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                    <p class="text-gray-400">
+                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                    </p>
+                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                        <div class="flex items-center justify-between gap-3">
+                            <img src="./images/user1.png" alt="micheal" class="w-12">
+                            <div class="flex items-start justify-between flex-col">
+                                <h3 class="text-white font-semibold">Micheal Smith</h3>
+                                <p class="text-gray-500 text-sm">Manager, Escape</p>
+                            </div>
                         </div>
+                        <img src="./images/quote.png" alt="quaotes" class="w-5">
                     </div>
-                    <img src="./images/quote.png" alt="quaotes" class="w-5">
-                </div>
-            </article>
-            <article class="flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                <p class="text-gray-400">
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                </p>
-                <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                    <div class="flex items-center justify-between gap-3">
-                        <img src="./images/user2.png" alt="micheal" class="w-12">
-                        <div class="flex items-start justify-between flex-col">
-                            <h3 class="text-white font-semibold">Kimberly Yung</h3>
-                            <p class="text-gray-500 text-sm">Manager, Escape</p>
+                </article>
+                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                    <p class="text-gray-400">
+                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                    </p>
+                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                        <div class="flex items-center justify-between gap-3">
+                            <img src="./images/user2.png" alt="micheal" class="w-12">
+                            <div class="flex items-start justify-between flex-col">
+                                <h3 class="text-white font-semibold">Kimberly Yung</h3>
+                                <p class="text-gray-500 text-sm">Manager, Escape</p>
+                            </div>
                         </div>
+                        <img src="./images/quote.png" alt="quaotes" class="w-5">
                     </div>
-                    <img src="./images/quote.png" alt="quaotes" class="w-5">
-                </div>
-            </article>
-            <article class="flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                <p class="text-gray-400">
-                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                </p>
-                <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                    <div class="flex items-center justify-between gap-3">
-                        <img src="./images/user3.png" alt="micheal" class="w-12">
-                        <div class="flex items-start justify-between flex-col">
-                            <h3 class="text-white font-semibold">James Ward</h3>
-                            <p class="text-gray-500 text-sm">Manager, Escape</p>
+                </article>
+                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                    <p class="text-gray-400">
+                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                    </p>
+                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                        <div class="flex items-center justify-between gap-3">
+                            <img src="./images/user3.png" alt="micheal" class="w-12">
+                            <div class="flex items-start justify-between flex-col">
+                                <h3 class="text-white font-semibold">James Ward</h3>
+                                <p class="text-gray-500 text-sm">Manager, Escape</p>
+                            </div>
                         </div>
+                        <img src="./images/quote.png" alt="quaotes" class="w-5">
                     </div>
-                    <img src="./images/quote.png" alt="quaotes" class="w-5">
-                </div>
-            </article>
+                </article>
+                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                    <p class="text-gray-400">
+                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                    </p>
+                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                        <div class="flex items-center justify-between gap-3">
+                            <img src="./images/user1.png" alt="micheal" class="w-12">
+                            <div class="flex items-start justify-between flex-col">
+                                <h3 class="text-white font-semibold">Micheal Smith</h3>
+                                <p class="text-gray-500 text-sm">Manager, Escape</p>
+                            </div>
+                        </div>
+                        <img src="./images/quote.png" alt="quaotes" class="w-5">
+                    </div>
+                </article>
+                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                    <p class="text-gray-400">
+                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                    </p>
+                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                        <div class="flex items-center justify-between gap-3">
+                            <img src="./images/user2.png" alt="micheal" class="w-12">
+                            <div class="flex items-start justify-between flex-col">
+                                <h3 class="text-white font-semibold">Kimberly Yung</h3>
+                                <p class="text-gray-500 text-sm">Manager, Escape</p>
+                            </div>
+                        </div>
+                        <img src="./images/quote.png" alt="quaotes" class="w-5">
+                    </div>
+                </article>
+                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                    <p class="text-gray-400">
+                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                    </p>
+                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                        <div class="flex items-center justify-between gap-3">
+                            <img src="./images/user3.png" alt="micheal" class="w-12">
+                            <div class="flex items-start justify-between flex-col">
+                                <h3 class="text-white font-semibold">James Ward</h3>
+                                <p class="text-gray-500 text-sm">Manager, Escape</p>
+                            </div>
+                        </div>
+                        <img src="./images/quote.png" alt="quaotes" class="w-5">
+                    </div>
+                </article>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </section>
+
+    <p class="text-green-500 text-center py-5">Still under development! Work in Progress...</p>
 
     <!-- ====== FOOTER SECTION ====== -->
     <footer class="w-full md:px-[6rem] px-[1rem] py-[2rem] bg-[url('./images/footer-bg.jpeg')] bg-cover h-full bg-center">  
