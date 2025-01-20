@@ -86,7 +86,7 @@
     </header>
 
     <!-- ====== EVENTS AND PROJECTS ====== -->
-    <section class="flex items-center flex-col space-y-5 mt-10 mx-14">
+    <section class="flex items-center flex-col space-y-5 md:px-[8rem] px-[1rem] py-[2rem] mt-10">
         <div class="text-center">
             <h4 class="text-base" style="color: var(--color-title);">
                 Event & Proje<span class="title">cts</span>
@@ -96,24 +96,28 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
             </p>
         </div>
-        <div class="w-[90%] space-y-5">
-            <article class="flex items-center border justify-center gap-8 rounded py-3 px-10">
-                <div>
+        <div class="md:w-[90%] space-y-5 grid grid-row-3 mx-4">
+            <article class="flex flex-col md:flex-row items-center border justify-center gap-8 rounded py-3 px-10">
+                <div class="text-center md:text-left">
                     <p class="text-gray-500 italic text-sm">17/06</p>
                     <h4 class="text-white font-semibold">2025</h4>
                 </div>
-                <div class="w-[25%]">
-                    <img src="./images/project-1.jpeg" alt="moon-galaxy" class="w-full h-[8rem]">
+            
+                <div class="w-full md:w-[25%]">
+                    <img src="./images/project-1.jpeg" alt="moon-galaxy" class="w-full h-[8rem] md:h-[10rem] object-cover rounded">
                 </div>
-                <div class="flex flex-col items-start justify-center">
+            
+                <div class="flex flex-col items-center md:items-start text-center md:text-left justify-center">
                     <h3 class="text-white font-semibold mb-2">GRAND DISCO NIGHT</h3>
                     <p class="text-gray-500 italic text-sm">Host: DJ Aibrid</p>
                     <p class="text-gray-500 italic text-sm">Location: Ijah, Lagos</p>
                     <p class="text-gray-500 italic text-sm">Venue: Escape night club</p>
                     <p class="text-gray-500 italic text-sm">Tickets: $25.00</p>
                 </div>
-                <button class="btn-primary px-8 py-2 rounded-full ml-[6rem]">Get Ticket</button>
+  
+                <button class="btn-primary px-8 py-2 rounded-full md:ml-[6rem]">Get Ticket</button>
             </article>
+            
             <article class="flex items-center border justify-center gap-8 rounded py-3 px-10">
                 <div>
                     <p class="text-gray-500 italic text-sm">05/07</p>
@@ -131,6 +135,7 @@
                 </div>
                 <button class="btn-primary px-8 py-2 rounded-full ml-[6rem]">Get Ticket</button>
             </article>
+
             <article class="flex items-center border justify-center gap-8 rounded py-3 px-10">
                 <div>
                     <p class="text-gray-500 italic text-sm">25/05</p>
@@ -151,7 +156,66 @@
         </div>
     </section>
 
-    <!-- ====== HEADER ====== -->
+    <!-- ====== TESTIMONIALS ====== -->
+    <section class="md:px-[8rem] px-[1rem] py-[2rem] bg-[url('./images/testimonial-bg.jpeg')] bg-top bg-cover">
+        <div class="text-center">
+            <h4 class="text-base" style="color: var(--color-title);">
+                Testimon<span class="title">ials</span>
+            </h4>
+            <h1 class="text-white md:text-lg font-semibold">WHAT MY CLIENTS & SUPPORTERS SAY</h1>
+            <p class="text-gray-500 text-sm md:w-3/4 md:ml-[3rem]">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
+            </p>
+        </div>
+        <div class="flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-3">
+            <article class="flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                <p class="text-gray-400">
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                </p>
+                <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                    <div class="flex items-center justify-between gap-3">
+                        <img src="./images/user1.png" alt="micheal" class="w-12">
+                        <div class="flex items-start justify-between flex-col">
+                            <h3 class="text-white font-semibold">Micheal Smith</h3>
+                            <p class="text-gray-500 text-sm">Manager, Escape</p>
+                        </div>
+                    </div>
+                    <img src="./images/quote.png" alt="quaotes" class="w-5">
+                </div>
+            </article>
+            <article class="flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                <p class="text-gray-400">
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                </p>
+                <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                    <div class="flex items-center justify-between gap-3">
+                        <img src="./images/user2.png" alt="micheal" class="w-12">
+                        <div class="flex items-start justify-between flex-col">
+                            <h3 class="text-white font-semibold">Kimberly Yung</h3>
+                            <p class="text-gray-500 text-sm">Manager, Escape</p>
+                        </div>
+                    </div>
+                    <img src="./images/quote.png" alt="quaotes" class="w-5">
+                </div>
+            </article>
+            <article class="flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
+                <p class="text-gray-400">
+                    "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
+                </p>
+                <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
+                    <div class="flex items-center justify-between gap-3">
+                        <img src="./images/user3.png" alt="micheal" class="w-12">
+                        <div class="flex items-start justify-between flex-col">
+                            <h3 class="text-white font-semibold">James Ward</h3>
+                            <p class="text-gray-500 text-sm">Manager, Escape</p>
+                        </div>
+                    </div>
+                    <img src="./images/quote.png" alt="quaotes" class="w-5">
+                </div>
+            </article>
+        </div>
+    </section>
+    
     <!-- ====== HEADER ====== -->
     <!-- ====== HEADER ====== -->
     <!-- ====== HEADER ====== -->
