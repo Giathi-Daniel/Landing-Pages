@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Landing Page</title>
+
+    <!-- ======= TAILWINDCSS CDN ======= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ====== ROBOTO FONT ======= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- ====== FONTAWESOME CDN ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- ====== HEADER SECTION ======= -->
+    <header class="flex flex-col items-center text-center px-4 py-6 md:py-10 md:px-12 bg-gray-50 shadow-sm rounded-lg">
+        <h1 class="text-blue-700 md:text-5xl text-3xl font-extrabold leading-tight">
+            Master Tech with Industry Expert
+        </h1>
+        <p class="mt-3 text-gray-600 md:text-lg text-sm">
+            Learn from a Seasoned Professional with 6+ Years of Experience
+        </p>
+    
+        <!-- Achievements Section -->
+        <div class="flex flex-wrap justify-center gap-4 text-sm mt-5 w-full">
+            <div class="bg-blue-100 py-3 px-5 rounded-xl flex items-center gap-2 text-blue-600">
+                <i class="fa-solid fa-face-smile text-yellow-500 text-lg"></i>
+                <span>40+ Successful Projects</span>
+            </div>
+            <div class="bg-blue-100 py-3 px-5 rounded-xl flex items-center gap-2 text-blue-600">
+                <i class="fa-solid fa-bullseye text-yellow-500 text-lg"></i>
+                <span>98% Project Success Rate</span>
+            </div>
+            <div class="bg-blue-100 py-3 px-5 rounded-xl flex items-center gap-2 text-blue-600">
+                <i class="fa-solid fa-bag-shopping text-yellow-500 text-lg"></i>
+                <span>Software Enterprise Owner</span>
+            </div>
+        </div>
+    
+        <!-- Links Section -->
+        <div class="mt-6 flex items-center justify-center gap-4">
+            <a href="https://www.github.com" target="_blank" class="bg-gray-900 text-white text-md font-medium py-2 px-4 rounded-lg shadow-md hover:bg-gray-700 hover:scale-105 transform transition-all ease-in-out duration-200">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="bg-blue-600 text-white text-md font-medium py-2 px-4 rounded-lg shadow-md hover:bg-blue-500 hover:scale-105 transform transition-all ease-in-out duration-200">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </header>
+    
+
+    <!-- ====== MAIN SECTION ======= -->
+    <main class="md:mx-9 mx-3">
+
+        <!-- === FEATURES SECTION === -->
+        <section class="flex md:flex-nowrap flex-wrap items-center justify-center gap-3 mt-5">
+            <article class="rounded-lg bg-white shadow-lg py-4 md:w-[30%] px-3 w-[bg-blue-600] space-y-1">
+                <i class="fa-solid fa-rocket text-xl text-orange-500"></i>
+                <h4 class="font-bold">Technical Excellence</h4>
+                <p>Full-stack development expertise with modern technologies</p>
+            </article>
+            <article class="rounded-lg bg-white shadow-lg py-4 px-3 md:w-[30%] w-[bg-blue-600] space-y-1">
+                <i class="fa-solid fa-lightbulb text-yellow-500 text-xl"></i>
+                <h4 class="font-bold">Industry Experience</h4>
+                <p>3+ years commercial experience in software development</p>
+            </article>
+            <article class="rounded-lg bg-white shadow-lg py-4 px-3 md:w-[30%] w-full w-[bg-blue-600] space-y-1">
+                <i class="fa-solid fa-user-graduate text-xl"></i>
+                <h4 class="font-bold">Academic Excellence</h4>
+                <p>XYZ University Computer Science Scholar</p>
+            </article>
+        </section>
+
+        <!-- === COURSES SECTION === -->
+        <section class="mt-5">
+            <h1 class="text-blue-600 font-bold text-2xl text-center">Premium Course Offerings</h1>
+            <div class="grid md:grid-cols-3 gap-3 grid-cols-1 place-center mt-4">
+                <article class="bg-white rounded-lg shadow-lg px-3 py-4 space-y-1">
+                    <i class="fa-brands fa-python text-3xl text-green-500"></i>
+                    <h2 class="font-bold text-blue-600 text-lg">Python Mastery</h2>
+                    <p>Master Python from fundamentals to advanced concepts</p>
+                    <div class="flex items-start justify-center flex-col space-y-1">
+                        <span class="flex items-center justify-center gap-2 mt-2">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            2 Sessions per week
+                        </span>
+                        <span class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            Free consultation
+                        </span>
+                        <span class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            USD 10 per session
+                        </span>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-lg px-3 py-4 space-y-1">
+                    <i class="fa-solid fa-globe text-3xl text-blue-300"></i>
+                    <h2 class="font-bold text-blue-600 text-lg">Flask Framework</h2>
+                    <p>Build enterprise-level web applications</p>
+                    <div class="bg-yellow-200 rounded-md text-sm p-2">
+                        <h6 class="text-red-500">Prerequisites</h6>
+                        <p class="text-red-400">Python, HTML, CSS fundamentals</p>
+                    </div>
+                    <div class="flex items-start justify-center flex-col space-y-1">
+                        <span class="flex items-center justify-center gap-2 mt-4">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            2 Sessions per week
+                        </span>
+                        <span class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            Free consultation
+                        </span>
+                        <span class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            USD 10 per session
+                        </span>
+                    </div>
+                </article>
+                <article class="bg-white rounded-lg shadow-lg px-3 py-4 space-y-1">
+                    <i class="fa-brands fa-linux text-3xl text-black"></i>
+                    <h2 class="font-bold text-blue-600 text-lg">Linux Administration</h2>
+                    <p>Master system administration and server management</p>
+                    <div class="flex items-start justify-center flex-col space-y-1">
+                        <span class="flex items-center justify-center gap-2 mt-2">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            2 Sessions per week
+                        </span>
+                        <span class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            Free consultation
+                        </span>
+                        <span class="flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-check text-blue-400"></i>
+                            USD 10 per session
+                        </span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- === CTA SECTION === -->
+        <section class="mt-5 mb-5">
+            <h1 class="text-blue-600 font-bold text-2xl text-center">Begin Your Tech Journey Today</h1>
+            <p class="text-center mt-4 text-sm">Join our community of successful developers</p>
+            <p class="flex items-center gap-3 justify-center bg-blue-600 w-fit rounded-[2rem] text-white px-3 py-2 mt-4 mx-auto">
+                <i class="fa-solid fa-phone text-white text-sm"></i>
+                Contact Benjamin Tait: +2548329432003
+            </p>
+            <div class="grid md:grid-cols-3 gap-3 grid-cols-1 place-center mt-4">
+                <article class="bg-white rounded-md shadow-lg px-3 py-4 space-y-1 text-center">
+                    <i class="fa-solid fa-hand-fist text-3xl text-yellow-500"></i>
+                    <h4 class="font-bold text-lg">Practical Experience</h4>
+                    <p>Learn from real-world project examples and industry best practices</p>
+                </article>
+                <article class="bg-white rounded-md shadow-lg px-3 py-4 space-y-1 text-center">
+                    <i class="fa-solid fa-people-group text-3xl"></i>
+                    <h4 class="font-bold text-lg">Personalized Attention</h4>
+                    <p>Small group sessions ensuring individual guidance and support</p>
+                </article>
+                <article class="bg-white rounded-md shadow-lg px-3 py-4 space-y-1 text-center">
+                    <i class="fa-solid fa-chart-simple text-3xl text-blue-500"></i>
+                    <h4 class="font-bold text-lg">Career Growth</h4>
+                    <p>Industry insights and guidance for your tech career journey</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- === FOOTER SECTION === -->
+        <footer class="mt-6 text-center">
+            <a href="https://www.github.com/Giathi-Daniel" target="_blank"><i class="fa-brands fa-github text-lg hover:scale-[1.1] duration-150 ease-in-out mr-2"></i></a>
+            <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin text-lg hover:scale-[1.1] duration-150 ease-in-out"></i></a>
+            <p class="mt-3 text-sm">Training conducted by BlackShark</p>
+            <p class="mt-3 text-blue-500 font-semibold">XYZ University Computer Science & Professional Developer</p>
+            <p class="mt-4 text-sm">Founder, BlackShark Enterprise | Web Developer</p>
+        </footer>
+    </main>
+    
+</body>
+</html>
