@@ -22,42 +22,42 @@
 <body>
     <!-- ====== HEADER ====== -->
     <header class="w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
-        <div class="absolute inset-0 opacity-40 z-10" style="background-color: var(--color-shadow-overlay);"></div>
+        <div class="absolute inset-0 opacity-30 z-10" style="background-color: var(--color-shadow-overlay);"></div>
         <nav class="relative z-20 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
             <!-- Logo Section -->
             <div>
                 <h1 class="font-bold uppercase text-white">Logo</h1>
             </div>
-        
+    
             <!-- Desktop Navigation Links and Button -->
             <div class="hidden md:flex items-center gap-10">
                 <ul class="flex gap-10 text-white">
                     <li><a href="#home" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#events">Events</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact" id="contact-link">Contact</a></li>
                 </ul>
-                <a href="#" class="px-8 py-3 rounded-full flex items-center justify-center cta-btn">Book Me</a>
+                <a href="#" class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
             </div>
-        
+    
             <!-- Mobile Hamburger Button -->
             <div class="md:hidden flex items-center z-30">
                 <button id="hamburger-icon" class="text-white focus:outline-none">
                     <i class="fas fa-bars text-xl"></i>
                 </button>
             </div>
-        
+    
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden absolute top-[2rem] left-[8rem] right-0 bg-black w-fit text-white p-4 hidden flex-col items-center gap-6 z-24">
+            <div id="mobile-menu" class="md:hidden absolute top-[2rem] left-[7rem] right-0 bg-black w-fit text-white p-4 hidden flex-col items-center gap-6 z-24">
                 <ul>
                     <li><a href="#home" class="block">Home</a></li>
                     <li><a href="#about" class="block">About</a></li>
                     <li><a href="#events" class="block">Events</a></li>
                     <li><a href="#contact" class="block">Contact</a></li>
                 </ul>
-                <a href="#" class="px-4 w-fit py-1 mt-4 rounded-full flex items-center justify-center cta-btn">Book Me</a>
+                <a href="#" class="mt-2 bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
             </div>
-        </nav>              
+        </nav>
         <section class="relative z-11 flex flex-col justify-center items-center">
             <div class="flex justify-center flex-col md:w-1/2 w-full text-center px-4">
                 <h4 class="md:text-lg text-white text-base">Hi, I am Aibrid</h4>
@@ -68,7 +68,7 @@
                     (A sound engineer and Graduate of DJ Consequence's Vibes DJ Academy)
                 </p>
             </div>
-            
+    
             <div class="mt-4 flex flex-wrap items-center gap-4 text-sm sm:gap-6 sm:text-base">
                 <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-primary font-semibold transition-all duration-300 w-full sm:w-auto">
                     Book Me
@@ -84,6 +84,51 @@
             <span class="bg-white rounded-full w-2 h-2"></span>
         </div>
     </header>
+    
+    <!-- Contact Us Modal -->
+    <div id="contact-modal" class="fixed inset-0 z-50 bg-gray-800 bg-opacity-70 hidden items-center justify-center">
+        <div class="bg-white rounded-md p-6 w-full max-w-lg relative">
+            <button id="close-modal" class="absolute top-2 right-2 text-white text-xl">×</button>
+            <form class="mx-auto border rounded-md px-8 py-2 w-full gap-4">
+                <div class="text-center mb-3">
+                    <h4 class="text-base" style="color: var(--color-title);">Contac<span class="title">t Us</span></h4> 
+                    <p class="text-gray-500 text-sm">Reach out to us today!</p>
+                </div>
+                <div class="flex flex-col gap-3 mb-5">
+                    <input type="text" name="name" placeholder="Name" class="w-full rounded-md px-4 py-2 border text-gray-400" style="background: var(--color-bg);">
+                    <input type="email" name="email" placeholder="Email" class="w-full rounded-md px-4 py-2 border text-gray-400" style="background: var(--color-bg);">
+                    <input type="number" name="phone" placeholder="Phone Number" class="w-full rounded-md px-4 py-2 border text-gray-400" style="background: var(--color-bg);">
+                    <textarea name="message" placeholder="Message" class="w-full rounded-md px-4 py-2 border text-gray-400" style="background: var(--color-bg);"></textarea>
+                </div>
+                <div class="flex items-center justify-between flex-wrap md:flex-nowrap mb-4">
+                    <button class="text-red-500 hover:text-red-600 transition duration-150 ease">Cancel</button>
+                    <button type="button" class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <form class="mx-auto border rounded-md px-8 py-2 w-1/2 gap-4">
+        <div class="text-center mb-3">
+            <h4 class="text-base" style="color: var(--color-title);">
+                Contac<span class="title">t Us</span>
+            </h4> 
+            <p class="text-gray-500 text-sm ">
+                Reach out to us today!
+            </p>
+        </div>
+        <div class="flex flex-col gap-3 mb-5">
+            <input type="text" name="name" placeholder="Name" class="w-full rounded-md px-4 py-2 border text-gray-400" style="background: var(--color-bg);">
+            <input type="email" name="email" placeholder="Email" class="w-full rounded-md px-4 py-2 border text-gray-400" style="background: var(--color-bg);">
+            <input type="number" name="phone" placeholder="Phone Number" class="w-full rounded-md px-4 py-2 border text-gray-400" style="background: var(--color-bg);">
+            <textarea name="message" placeholder="Message" class="w-full rounded-md px-4 py-2 border text-gray-400" style="background: var(--color-bg);"></textarea>
+        </div>
+        <div class="flex items-center justify-between flex-wrap md:flex-nowrap mb-4">
+            <button class="text-red-500 hover:text-red-600 transition duration-150 ease">Cancel</button>
+            <button type="button" class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">Send</button>
+        </div>
+    </form>
 
     <!-- ====== FEATURES SECTION ====== -->
     <section class="w-full md:px-10 px-8 py-8 grid md:grid-cols-4 grid-cols-1 space-y-5">
@@ -112,7 +157,7 @@
                 My Servi<span class="title">ces</span>
             </h4>
             <h1 class="text-white md:text-lg font-semibold">WHAT I OFFER</h1>
-            <p class="md:ml-[9rem] text-gray-500 text-sm md:w-3/4 md:ml-[3rem]">
+            <p class="text-gray-500 text-sm ">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
             </p>
         </div>
@@ -122,23 +167,25 @@
                 <div class="space-y-2 mt-[-4rem] mx-3 mb-7">
                     <h1 class="text-white font-bold">EVENT DJ</h1>
                     <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. </p>
-                    <button class="btn-primary text-white px-8 py-2 rounded-full">Book DJ</button>
+                    <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">Book DJ</button>
                 </div>
             </article>
+
             <article class="flex flex-col gap-2 overflow-hidden bg-gradient-to-t from-black via-black/70 to-transparent">
                 <img src="./images/music.png" alt="music-production" class="w-full rounded">
                 <div class="space-y-2 mt-[-4rem] mx-3 mb-7">
                     <h1 class="text-white font-bold">MUSIC PRODUCTION</h1>
                     <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. </p>
-                    <button class="btn-primary text-white px-8 py-2 rounded-full">Book Production</button>
+                    <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">Book Production</button>
                 </div>
             </article>
+
             <article class="flex flex-col gap-2 overflow-hidden bg-gradient-to-t from-black via-black/70 to-transparent">
                 <img src="./images/consult.png" alt="music-production" class="w-[100%] rounded">
                 <div class="space-y-2 mt-[-4rem] mx-3 mb-7">
                     <h1 class="text-white font-bold">CONSULTATION</h1>
                     <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. </p>
-                    <button class="btn-primary text-white px-8 py-2 rounded-full">Book Consultation</button>
+                    <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">Book Consultation</button>
                 </div>
             </article>
         </div>
@@ -189,7 +236,7 @@
                     </div>
                 </div>
 
-                <button class="btn-primary px-8 py-3 text-white text-md rounded-full">Learn More</button>
+                <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-400 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">Learn More</button>
             </div>
         </div>
     </section>
@@ -206,61 +253,91 @@
             </p>
         </div>
         <div class="md:w-[90%] space-y-5 grid grid-row-3 mx-4">
-            <article class="flex flex-col md:flex-row items-center border justify-center gap-8 rounded py-3 px-10">
-                <div class="text-center md:text-left">
-                    <p class="text-gray-500 italic text-sm">17/06</p>
-                    <h4 class="text-white font-semibold">2025</h4>
+            <article class="flex flex-col md:flex-row items-center bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 shadow-lg justify-between gap-8 rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <!-- Date Section -->
+                <div class="flex-shrink-0 text-center md:text-left">
+                    <p class="text-gray-400 italic text-sm">17/06</p>
+                    <h4 class="text-white font-bold text-xl">2025</h4>
                 </div>
             
-                <div class="w-full md:w-[25%]">
-                    <img src="./images/project-1.jpeg" alt="moon-galaxy" class="w-full h-[8rem] md:h-[10rem] object-cover rounded">
+                <!-- Image Section -->
+                <div class="w-full md:w-[20%]">
+                    <img src="./images/project-1.jpeg" alt="moon-galaxy" class="w-full h-[12rem] object-cover rounded-lg shadow-md">
                 </div>
             
-                <div class="flex flex-col items-center md:items-start text-center md:text-left justify-center">
-                    <h3 class="text-white font-semibold mb-2">GRAND DISCO NIGHT</h3>
-                    <p class="text-gray-500 italic text-sm">Host: DJ Aibrid</p>
-                    <p class="text-gray-500 italic text-sm">Location: Ijah, Lagos</p>
-                    <p class="text-gray-500 italic text-sm">Venue: Escape night club</p>
-                    <p class="text-gray-500 italic text-sm">Tickets: $25.00</p>
+                <!-- Details Section -->
+                <div class="flex flex-col flex-1 gap-2 text-center md:text-left">
+                    <h3 class="text-white font-extrabold text-lg md:text-xl">GRAND DISCO NIGHT</h3>
+                    <p class="text-gray-400 italic text-sm">Host: DJ Aibrid</p>
+                    <p class="text-gray-400 italic text-sm">Location: Ijah, Lagos</p>
+                    <p class="text-gray-400 italic text-sm">Venue: Escape Night Club</p>
+                    <p class="text-gray-400 italic text-sm font-medium">Tickets: <span class="text-yellow-400">$25.00</span></p>
                 </div>
-  
-                <button class="btn-primary px-8 py-2 rounded-full md:ml-[6rem]">Get Ticket</button>
-            </article>
             
-            <article class="flex items-center border justify-center gap-8 rounded py-3 px-10">
-                <div>
-                    <p class="text-gray-500 italic text-sm">05/07</p>
-                    <h4 class="text-white font-semibold">2025</h4>
+                <!-- Button Section -->
+                <div class="mt-4 md:mt-0">
+                    <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-400 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">
+                        Get Ticket
+                    </button>
                 </div>
-                <div class="w-[25%]">
-                    <img src="./images/project-3.jpeg" alt="moon-galaxy" class="w-full h-[8rem]">
-                </div>
-                <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-white font-semibold mb-2">BUJ RAVE WAVE</h3>
-                    <p class="text-gray-500 italic text-sm">Host: DJ Aibrid</p>
-                    <p class="text-gray-500 italic text-sm">Location: Wuse, Abuja</p>
-                    <p class="text-gray-500 italic text-sm">Venue: Landmark Centre</p>
-                    <p class="text-gray-500 italic text-sm">Tickets: $25.00</p>
-                </div>
-                <button class="btn-primary px-8 py-2 rounded-full ml-[6rem]">Get Ticket</button>
             </article>
 
-            <article class="flex items-center border justify-center gap-8 rounded py-3 px-10">
-                <div>
-                    <p class="text-gray-500 italic text-sm">25/05</p>
-                    <h4 class="text-white font-semibold">2025</h4>
+            <article class="flex flex-col md:flex-row items-center bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 shadow-lg justify-between gap-8 rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <!-- Date Section -->
+                <div class="flex-shrink-0 text-center md:text-left">
+                    <p class="text-gray-400 italic text-sm">17/06</p>
+                    <h4 class="text-white font-bold text-xl">2025</h4>
                 </div>
-                <div class="w-[25%]">
-                    <img src="./images/project-2.jpeg" alt="party-night" class="w-full h-[8rem]">
+            
+                <!-- Image Section -->
+                <div class="w-full md:w-[20%]">
+                    <img src="./images/project-3.jpeg" alt="moon-galaxy" class="w-full h-[12rem] object-cover rounded-lg shadow-md">
                 </div>
-                <div class="flex flex-col items-start justify-center">
-                    <h3 class="text-white font-semibold mb-2">AFRO-AMAPIANO DJ MIX</h3>
+            
+                <!-- Details Section -->
+                <div class="flex flex-col flex-1 gap-2 text-center md:text-left">
+                    <h3 class="text-white font-extrabold text-lg md:text-xl">BUJ RAVE WAVE</h3>
+                    <p class="text-gray-400 italic text-sm">Host: DJ Aibrid</p>
+                    <p class="text-gray-400 italic text-sm">Location: Wuse, Abuja</p>
+                    <p class="text-gray-400 italic text-sm">Venue: Landmark Centre</p>
+                    <p class="text-gray-400 italic text-sm font-medium">Tickets: <span class="text-yellow-400">$25.00</span></p>
+                </div>
+            
+                <!-- Button Section -->
+                <div class="mt-4 md:mt-0">
+                    <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-400 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">
+                        Get Ticket
+                    </button>
+                </div>
+            </article>
+
+            <article class="flex flex-col md:flex-row items-center bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 shadow-lg justify-between gap-8 rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <!-- Date Section -->
+                <div class="flex-shrink-0 text-center md:text-left">
+                    <p class="text-gray-400 italic text-sm">25/05</p>
+                    <h4 class="text-white font-bold text-xl">2025</h4>
+                </div>
+            
+                <!-- Image Section -->
+                <div class="w-full md:w-[20%]">
+                    <img src="./images/project-2.jpeg" alt="moon-galaxy" class="w-full h-[12rem] object-cover rounded-lg shadow-md">
+                </div>
+            
+                <!-- Details Section -->
+                <div class="flex flex-col flex-1 gap-2 text-center md:text-left">
+                    <h3 class="text-white font-extrabold text-lg md:text-xl">AFRO-AMAPIANO DJ MIX</h3>
                     <p class="text-gray-500 italic text-sm">Artist: DJ Aibrid</p>
                     <p class="text-gray-500 italic text-sm">File: MP3</p>
                     <p class="text-gray-500 italic text-sm">Duration: 01:35:48</p>
-                    <p class="text-gray-500 italic text-sm">Price: Free</p>
+                    <p class="text-gray-400 italic text-sm font-medium">Tickets: <span class="text-yellow-500">FREE</span></p>
                 </div>
-                <button class="btn-primary px-8 py-2 rounded-full ml-[6rem]">Visit</button>
+            
+                <!-- Button Section -->
+                <div class="mt-4 md:mt-0">
+                    <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-400 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">
+                        Visit
+                    </button>
+                </div>
             </article>
         </div>
     </section>

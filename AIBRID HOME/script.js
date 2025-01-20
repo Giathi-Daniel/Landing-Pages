@@ -24,3 +24,15 @@ document.addEventListener("click", (e) => {
 mobileMenu.querySelectorAll("a").forEach(link => {
     link.addEventListener("click", closeMenu);
 });
+
+// FORM MODAL
+document.getElementById("contact-link").addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("contact-modal").style.display = "flex";
+    document.body.classList.add("modal-open"); // Disable scrolling
+});
+
+document.getElementById("close-modal").addEventListener("click", function () {
+    document.getElementById("contact-modal").style.display = "none";
+    document.body.classList.remove("modal-open"); // Enable scrolling
+});
