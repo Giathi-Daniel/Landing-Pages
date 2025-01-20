@@ -1,0 +1,85 @@
+:root {
+    --color-bg: rgb(17, 17, 17);
+    --color-title: rgb(206, 62, 26);
+    --color-dark: rgb(1, 1, 1);
+    --color-heading: rgb(77, 23, 9);
+    --color-heading-2: rgba(167, 31, 76);
+    --color-border-button: rgb(158, 35, 4);
+    --color-bg-button: rgb(226, 53, 10);
+    --color-link-hover: rgb(207, 49, 13);
+    --color-shadow-overlay: rgb(4, 4, 5);
+    --transition: all 400ms ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-bg);
+    font-family: "Inter", serif;
+}
+
+a {
+    transition: var(--transition);
+}
+
+a:hover:not(.cta-btn) {
+    color: var(--color-link-hover);
+}
+
+a.active {
+    color: var(--color-link-hover);
+}
+
+.cta-btn {
+    background: linear-gradient(to right, var(--color-bg-button) 70%, var(--color-heading-2) 70%);
+    border: none;
+    transition: var(--transition);
+}
+
+.cta-btn:hover {
+    background: linear-gradient(to right, var(--color-heading-2) 75%, var(--color-border-button) 75%);
+    transform: scale(1.05);
+}
+
+.title {
+    background: linear-gradient(to right, var(--color-title), var(--color-heading-2));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, var(--color-bg-button) 70%, var(--color-heading-2) 70%);
+    border: none;
+    transition: background 0.3s ease, transform .2s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, var(--color-heading-2) 75%, var(--color-border-button) 75%);
+    transform: scale(1.05);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(167, 31, 76, 0.5);
+}
+
+.btn-secondary {
+    border: 2px solid var(--color-border-button);
+    transition: border 0.3s ease, transform .2s ease;
+}
+
+.btn-secondary:hover {
+    transform: scale(1.1);
+}

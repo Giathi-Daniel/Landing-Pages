@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AiBrid Home</title>
+
+    <!-- ======= TAILWINDCSS CDN ======= -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ======= INTER FONT ======= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- ====== FONTAWESOME CDN ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+    <!-- ====== STYLESHEET ======= -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ====== HEADER ====== -->
+    <header class="w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
+        <div class="absolute inset-0 opacity-40 z-10" style="background-color: var(--color-shadow-overlay);"></div>
+        <nav class="relative z-20 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
+            <!-- Logo Section -->
+            <div>
+                <h1 class="font-bold uppercase text-white">Logo</h1>
+            </div>
+        
+            <!-- Desktop Navigation Links and Button -->
+            <div class="hidden md:flex items-center gap-10">
+                <ul class="flex gap-10 text-white">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#" class="px-8 py-3 rounded-full flex items-center justify-center cta-btn">Book Me</a>
+            </div>
+        
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden flex items-center z-30">
+                <button id="hamburger-icon" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden absolute top-[2rem] left-[8rem] right-0 bg-black w-fit text-white p-4 hidden flex-col items-center gap-6 z-24">
+                <ul>
+                    <li><a href="#home" class="block">Home</a></li>
+                    <li><a href="#about" class="block">About</a></li>
+                    <li><a href="#events" class="block">Events</a></li>
+                    <li><a href="#contact" class="block">Contact</a></li>
+                </ul>
+                <a href="#" class="px-4 w-fit py-1 mt-4 rounded-full flex items-center justify-center cta-btn">Book Me</a>
+            </div>
+        </nav>              
+        <section class="relative z-11 flex flex-col justify-center items-center">
+            <div class="flex justify-center flex-col md:w-1/2 w-full text-center px-4">
+                <h4 class="md:text-lg text-white text-base">Hi, I am Aibrid</h4>
+                <h1 class="font-bold md:text-6xl text-3xl text-white">
+                    FEEL THE MUSIC WITH <span class="title">DJ AIBRID</span>
+                </h1>
+                <p class="mt-2 text-gray-300 ml-[-1rem] text-sm">
+                    (A sound engineer and Graduate of DJ Consequence's Vibes DJ Academy)
+                </p>
+            </div>
+            
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-sm sm:gap-6 sm:text-base">
+                <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-primary font-semibold transition-all duration-300 w-full sm:w-auto">
+                    Book Me
+                </button>
+                <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-secondary font-semibold transition-all duration-300 w-full sm:w-auto">
+                    My Projects
+                </button>
+            </div>
+        </section>
+        <div class="relative z-20 flex items-center justify-center gap-3 mt-[4rem] cursor-pointer">
+            <span class="bg-white rounded-full w-2 h-2" style="background-color: var(--color-bg-button);"></span>
+            <span class="bg-white rounded-full w-2 h-2"></span>
+            <span class="bg-white rounded-full w-2 h-2"></span>
+        </div>
+    </header>
+
+    <!-- ====== HEADER ====== -->
+    <!-- ====== HEADER ====== -->
+    <!-- ====== HEADER ====== -->
+    <!-- ====== HEADER ====== -->
+    <!-- ====== HEADER ====== -->
+
+
+    <!-- ====== SCRIPT JS ====== -->
+    <script src="script.js"></script>
+</body>
+</html>
