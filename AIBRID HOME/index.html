@@ -28,9 +28,9 @@
 </head>
 <body>
     <!-- ====== HEADER ====== -->
-<header class="w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
-    <div class="absolute inset-0 bg-black opacity-50 z-10"></div> <!-- Adjusted opacity for better visibility -->
-    <nav class="relative z-20 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
+<header class="relative w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
+    <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+    <nav class="relative z-30 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
         <!-- Logo Section -->
         <div>
             <h1 class="font-bold uppercase text-white">Logo</h1>
@@ -55,15 +55,55 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden absolute top-[2rem] left-[7rem] right-0 bg-black w-fit text-white p-4 hidden flex-col items-center gap-6 z-24">
-            <ul>
-                <li><a href="#home" class="block">Home</a></li>
-                <li><a href="#about" class="block">About</a></li>
-                <li><a href="#events" class="block">Events</a></li>
-                <li><a href="#contact" class="block">Contact</a></li>
-            </ul>
-            <a href="#" class="mt-2 bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
+        <div 
+          id="mobile-menu" 
+          class="md:hidden absolute top-[3rem] left-0 right-0 mx-auto bg-gradient-to-br from-gray-800 via-black to-gray-900 text-white w-[90%] rounded-lg p-6 hidden flex-col items-center shadow-lg z-30"
+        >
+          <!-- Navigation Links -->
+          <ul class="flex flex-col gap-4 text-lg font-medium w-full">
+            <li>
+              <a 
+                href="#home" 
+                class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#about" 
+                class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#events" 
+                class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+              >
+                Events
+              </a>
+            </li>
+            <li>
+              <a 
+                href="#contact" 
+                class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        
+          <!-- Call to Action Button -->
+          <a 
+            href="#" 
+            class="mt-6 bg-gradient-to-r from-orange-500 via-red-500 to-purple-600 hover:from-orange-400 hover:to-purple-500 text-white font-semibold px-8 py-3 rounded-full shadow-md transition-transform duration-300 hover:scale-105"
+          >
+            Book Me
+          </a>
         </div>
+
     </nav>
 
     <!-- == HERO SECTION == -->
@@ -198,69 +238,69 @@
     </section>
 
     <!-- ====== ABOUT SECTION ====== -->
-<section
-  id="about"
-  class="relative bg-[url('./images/about-bg.jpeg')] bg-cover bg-center text-gray-100 py-16 px-6 sm:px-10 md:px-20"
->
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-
-  <!-- Content -->
-  <div class="relative z-10 md:ml-[50%]">
-    <!-- Title -->
-    <h4 class="text-lg font-semibold text-orange-500 mb-4 tracking-wide">
-      More About <span class="text-purple-500">Aibrid</span>
-    </h4>
-    <h1 class="text-3xl md:text-4xl font-bold leading-tight text-white mb-6">
-      The Biggest Disk Jockey & Music Producer in Town
-    </h1>
-
-    <!-- Description -->
-    <p class="text-gray-300 text-base leading-relaxed mb-4">
-      Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat
-      purus. Duis turpis nunc, aliquam id nunc ac, convallis dictum nisi.
-    </p>
-    <p class="text-gray-300 text-base leading-relaxed mb-8">
-      Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat
-      purus. Duis turpis nunc, aliquam id nunc ac, convallis dictum nisi.
-    </p>
-
-    <!-- Services -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
-      <div class="flex items-center gap-3">
-        <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
-        <p class="text-gray-300">Executive Event Production</p>
-      </div>
-      <div class="flex items-center gap-3">
-        <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
-        <p class="text-gray-300">Performance Artists</p>
-      </div>
-      <div class="flex items-center gap-3">
-        <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
-        <p class="text-gray-300">Custom Invite Creation</p>
-      </div>
-      <div class="flex items-center gap-3">
-        <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
-        <p class="text-gray-300">Audience Procurement</p>
-      </div>
-      <div class="flex items-center gap-3">
-        <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
-        <p class="text-gray-300">Event Theme Decor</p>
-      </div>
-      <div class="flex items-center gap-3">
-        <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
-        <p class="text-gray-300">Custom Invite Creation</p>
-      </div>
-    </div>
-
-    <!-- CTA Button -->
-    <button
-      class="bg-gradient-to-r from-orange-500 to-purple-500 hover:from-orange-400 hover:to-purple-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all duration-300"
+    <section
+      id="about"
+      class="relative bg-[url('./images/about-bg.jpeg')] bg-cover bg-center text-gray-100 py-16 px-6 sm:px-10 md:px-20"
     >
-      Learn More
-    </button>
-  </div>
-</section>
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black md:ml-[50%] bg-opacity-60"></div>
+    
+      <!-- Content -->
+      <div class="relative z-10 md:ml-[50%]">
+        <!-- Title -->
+        <h4 class="text-lg font-semibold text-orange-500 mb-4 tracking-wide">
+          More About <span class="text-purple-500">Aibrid</span>
+        </h4>
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight text-white mb-6">
+          The Biggest Disk Jockey & Music Producer in Town
+        </h1>
+    
+        <!-- Description -->
+        <p class="text-gray-300 text-base leading-relaxed mb-4">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat
+          purus. Duis turpis nunc, aliquam id nunc ac, convallis dictum nisi.
+        </p>
+        <p class="text-gray-300 text-base leading-relaxed mb-8">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat
+          purus. Duis turpis nunc, aliquam id nunc ac, convallis dictum nisi.
+        </p>
+    
+        <!-- Services -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Executive Event Production</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Performance Artists</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Custom Invite Creation</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Audience Procurement</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Event Theme Decor</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Custom Invite Creation</p>
+          </div>
+        </div>
+    
+        <!-- CTA Button -->
+        <button
+          class="bg-gradient-to-r from-orange-500 to-purple-500 hover:from-orange-400 hover:to-purple-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all duration-300"
+        >
+          Learn More
+        </button>
+      </div>
+    </section>
 
 
     <!-- ====== EVENTS AND PROJECTS ====== -->
@@ -366,113 +406,60 @@
 
     <!-- ====== TESTIMONIALS SECTION ====== -->
     <section class="md:px-[8rem] px-[1rem] py-[2rem] bg-[url('./images/testimonial-bg.jpeg')] bg-top bg-cover">
-        <div class="text-center">
-            <h4 class="text-base" style="color: var(--color-title);">
-                Testimon<span class="title">ials</span>
-            </h4>
-            <h1 class="text-white md:text-lg font-semibold">WHAT MY CLIENTS & SUPPORTERS SAY</h1>
-            <p class="text-gray-500 text-sm md:w-3/4 md:ml-[3rem]">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
+      <div class="text-center">
+        <h4 class="text-base" style="color: var(--color-title);">
+          Testimon<span class="title">ials</span>
+        </h4>
+        <h1 class="text-white md:text-lg font-semibold">WHAT MY CLIENTS & SUPPORTERS SAY</h1>
+        <p class="text-gray-500 text-sm md:w-3/4 md:ml-[3rem]">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
+        </p>
+      </div>
+    
+      <!-- Swiper Slider -->
+      <div class="swiper mt-6">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-gradient-to-b from-gray-800 to-gray-900 text-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-400 text-sm">
+              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum."
             </p>
-        </div>
-        <div class="swiper swiper-container mt-3">
-            <div class="swiper-wrapper flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-3">
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user1.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">Micheal Smith</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user2.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">Kimberly Yung</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user3.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">James Ward</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user1.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">Micheal Smith</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user2.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">Kimberly Yung</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user3.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">James Ward</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
+            <div class="flex items-center mt-4">
+              <img src="./images/user1.png" alt="Michael" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-white font-semibold">Michael Smith</h3>
+                <p class="text-gray-500 text-sm">Manager, Escape</p>
+              </div>
             </div>
-
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-gradient-to-b from-gray-800 to-gray-900 text-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-400 text-sm">
+              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum."
+            </p>
+            <div class="flex items-center mt-4">
+              <img src="./images/user2.png" alt="Kimberly" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-white font-semibold">Kimberly Yung</h3>
+                <p class="text-gray-500 text-sm">Manager, Escape</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-gradient-to-b from-gray-800 to-gray-900 text-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-400 text-sm">
+              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum."
+            </p>
+            <div class="flex items-center mt-4">
+              <img src="./images/user3.png" alt="James" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-white font-semibold">James Ward</h3>
+                <p class="text-gray-500 text-sm">Manager, Escape</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <p class="text-green-500 text-center py-5">Still under development! Work in Progress...</p>
@@ -491,14 +478,17 @@
         </div>
     
         <!-- Navigation Links -->
-        <div class="flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-6 text-sm sm:text-base">
-          <a href="#" class="hover:text-orange-500 transition-colors">About</a>
-          <a href="#" class="hover:text-orange-500 transition-colors">Events</a>
-          <a href="#" class="hover:text-orange-500 transition-colors">FAQ</a>
-          <a href="#" class="hover:text-orange-500 transition-colors">Blog</a>
-          <a href="#" class="hover:text-orange-500 transition-colors">Terms</a>
-          <a href="#" class="hover:text-orange-500 transition-colors">Privacy</a>
-          <a href="#" class="hover:text-orange-500 transition-colors">Contact</a>
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+          <div class="class="space-y-3">
+              <a href="#" class="hover:text-orange-500 transition-colors">About</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Events</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">FAQ</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Blog</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Terms</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Privacy</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Contact</a>
+          </div>
         </div>
     
         <!-- Contact Information -->
@@ -540,7 +530,7 @@
     
       <hr class="border-gray-700 mt-12 mb-8" />
     
-      <p class="text-center text-sm text-gray-400">
+      <p class="relative z-30 text-center text-sm text-gray-400">
         &copy; 2025 Aibrid. Crafted with care by <span class="text-orange-500">BlackShark</span>.
       </p>
     </footer>
