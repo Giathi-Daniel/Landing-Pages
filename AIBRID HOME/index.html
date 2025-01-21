@@ -28,111 +28,111 @@
 </head>
 <body>
     <!-- ====== HEADER ====== -->
-<header class="relative w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
-    <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
-    <nav class="relative z-30 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
-        <!-- Logo Section -->
-        <div>
-            <h1 class="font-bold uppercase text-white">Logo</h1>
-        </div>
-
-        <!-- Desktop Navigation Links and Button -->
-        <div class="hidden md:flex items-center gap-10">
-            <ul class="flex gap-10 text-white">
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact" id="contact-link">Contact</a></li>
-            </ul>
-            <a href="#" class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
-        </div>
-
-        <!-- Mobile Hamburger Button -->
-        <div class="md:hidden flex items-center z-30">
-            <button id="hamburger-icon" class="text-white focus:outline-none">
-                <i class="fas fa-bars text-xl"></i>
-            </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div 
-          id="mobile-menu" 
-          class="md:hidden absolute top-[3rem] left-0 right-0 mx-auto bg-gradient-to-br from-gray-800 via-black to-gray-900 text-white w-[90%] rounded-lg p-6 hidden flex-col items-center shadow-lg z-30"
-        >
-          <!-- Navigation Links -->
-          <ul class="flex flex-col gap-4 text-lg font-medium w-full">
-            <li>
+    <header class="relative w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
+        <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <nav class="relative z-30 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
+            <!-- Logo Section -->
+            <div>
+                <h1 class="font-bold uppercase text-white">Logo</h1>
+            </div>
+    
+            <!-- Desktop Navigation Links and Button -->
+            <div class="hidden md:flex items-center gap-10">
+                <ul class="flex gap-10 text-white">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact" id="contact-link">Contact</a></li>
+                </ul>
+                <a href="#" class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
+            </div>
+    
+            <!-- Mobile Hamburger Button -->
+            <div class="md:hidden flex items-center z-30">
+                <button id="hamburger-icon" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+    
+            <!-- Mobile Menu -->
+            <div 
+              id="mobile-menu" 
+              class="md:hidden absolute top-[3rem] left-0 right-0 mx-auto bg-gradient-to-br from-gray-800 via-black to-gray-900 text-white w-[90%] rounded-lg p-6 hidden flex-col items-center shadow-lg z-30"
+            >
+              <!-- Navigation Links -->
+              <ul class="flex flex-col gap-4 text-lg font-medium w-full items-start mb-2">
+                <li>
+                  <a 
+                    href="#home" 
+                    class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#about" 
+                    class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#events" 
+                    class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                  >
+                    Events
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#contact" 
+                    class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            
+              <!-- Call to Action Button -->
               <a 
-                href="#home" 
-                class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                href="#" 
+                class="mt-6 bg-gradient-to-r from-orange-500 via-red-500 to-purple-600 hover:from-orange-400 hover:to-purple-500 text-white font-semibold px-8 py-3 rounded-full shadow-md transition-transform duration-300 hover:scale-105"
               >
-                Home
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#about" 
-                class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#events" 
-                class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
-              >
-                Events
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#contact" 
-                class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        
-          <!-- Call to Action Button -->
-          <a 
-            href="#" 
-            class="mt-6 bg-gradient-to-r from-orange-500 via-red-500 to-purple-600 hover:from-orange-400 hover:to-purple-500 text-white font-semibold px-8 py-3 rounded-full shadow-md transition-transform duration-300 hover:scale-105"
-          >
-            Book Me
-          </a>
-        </div>
-
-    </nav>
-
-    <!-- == HERO SECTION == -->
-    <section class="relative z-11 flex flex-col justify-center items-center">
-        <div class="flex justify-center flex-col md:w-1/2 w-full text-center px-4">
-            <h4 class="md:text-lg text-white text-base">Hi, I am Aibrid</h4>
-            <h1 class="font-bold md:text-6xl text-3xl text-white">
-                FEEL THE MUSIC WITH <span class="title">DJ AIBRID</span>
-            </h1>
-            <p class="mt-2 text-gray-300 ml-[-1rem] text-sm">
-                (A sound engineer and Graduate of DJ Consequence's Vibes DJ Academy)
-            </p>
-        </div>
-
-        <div class="mt-4 flex flex-wrap items-center gap-4 text-sm sm:gap-6 sm:text-base">
-            <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-primary font-semibold transition-all duration-300 w-full sm:w-auto">
                 Book Me
-            </button>
-            <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-secondary font-semibold transition-all duration-300 w-full sm:w-auto">
-                My Projects
-            </button>
+              </a>
+            </div>
+    
+        </nav>
+    
+        <!-- == HERO SECTION == -->
+        <section class="relative z-30 flex flex-col justify-center items-center">
+            <div class="flex justify-center flex-col md:w-1/2 w-full text-center px-4">
+                <h4 class="md:text-lg text-white text-base">Hi, I am Aibrid</h4>
+                <h1 class="font-bold md:text-6xl text-3xl text-white">
+                    FEEL THE MUSIC WITH <span class="title">DJ AIBRID</span>
+                </h1>
+                <p class="mt-2 text-gray-300 ml-[-1rem] text-sm">
+                    (A sound engineer and Graduate of DJ Consequence's Vibes DJ Academy)
+                </p>
+            </div>
+    
+            <div class="mt-4 flex flex-wrap items-center gap-4 text-sm sm:gap-6 sm:text-base">
+                <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-primary font-semibold transition-all duration-300 w-full sm:w-auto">
+                    Book Me
+                </button>
+                <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-secondary font-semibold transition-all duration-300 w-full sm:w-auto">
+                    My Projects
+                </button>
+            </div>
+        </section>
+        <div class="relative z-20 flex items-center justify-center gap-3 mt-[4rem] cursor-pointer">
+            <span class="bg-white rounded-full w-2 h-2" style="background-color: var(--color-bg-button);"></span>
+            <span class="bg-white rounded-full w-2 h-2"></span>
+            <span class="bg-white rounded-full w-2 h-2"></span>
         </div>
-    </section>
-    <div class="relative z-20 flex items-center justify-center gap-3 mt-[4rem] cursor-pointer">
-        <span class="bg-white rounded-full w-2 h-2" style="background-color: var(--color-bg-button);"></span>
-        <span class="bg-white rounded-full w-2 h-2"></span>
-        <span class="bg-white rounded-full w-2 h-2"></span>
-    </div>
-</header>
+    </header>
 
     
     <!-- Contact Us Modal -->
@@ -162,7 +162,7 @@
     <section class="w-full bg-gray-900 text-gray-100 py-12 px-6 sm:px-10 md:px-20">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         <!-- Feature Item -->
-        <div class="text-center border-r border-gray-700 last:border-r-0 px-4">
+        <div class="text-center border-r lg:border-gray-800 md:border-gray-700 border-r-0 last:border-r-0 px-4">
           <h2 class="text-4xl font-bold text-white">
             10<span class="text-orange-500">+</span>
           </h2>
@@ -170,7 +170,7 @@
         </div>
     
         <!-- Feature Item -->
-        <div class="text-center border-r border-gray-700 last:border-r-0 px-4">
+        <div class="text-center border-r lg:border-gray-800 md:border-gray-700 border-r-0 border-gray-700 last:border-r-0 px-4">
           <h2 class="text-4xl font-bold text-white">
             40<span class="text-orange-500">+</span>
           </h2>
@@ -178,7 +178,7 @@
         </div>
     
         <!-- Feature Item -->
-        <div class="text-center border-r border-gray-700 last:border-r-0 px-4">
+        <div class="text-center border-r lg:border-gray-800 md:border-gray-700 border-r-0 border-gray-700 last:border-r-0 px-4">
           <h2 class="text-4xl font-bold text-white">
             120<span class="text-orange-500">+</span>
           </h2>
@@ -243,7 +243,7 @@
       class="relative bg-[url('./images/about-bg.jpeg')] bg-cover bg-center text-gray-100 py-16 px-6 sm:px-10 md:px-20"
     >
       <!-- Overlay -->
-      <div class="absolute inset-0 bg-black md:ml-[50%] bg-opacity-60"></div>
+      <div class="absolute inset-0 bg-gradient-to-l from-black to transparent md:ml-[45%] bg-opacity-60"></div>
     
       <!-- Content -->
       <div class="relative z-10 md:ml-[50%]">
@@ -480,7 +480,7 @@
         <!-- Navigation Links -->
         <div>
           <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
-          <div class="class="space-y-3">
+          <div class="class="space-y-3 flex flex-col items-center">
               <a href="#" class="hover:text-orange-500 transition-colors">About</a>
               <a href="#" class="hover:text-orange-500 transition-colors">Events</a>
               <a href="#" class="hover:text-orange-500 transition-colors">FAQ</a>
@@ -530,7 +530,7 @@
     
       <hr class="border-gray-700 mt-12 mb-8" />
     
-      <p class="relative z-30 text-center text-sm text-gray-400">
+      <p class="relative z-30 text-center text-sm text-gray-200">
         &copy; 2025 Aibrid. Crafted with care by <span class="text-orange-500">BlackShark</span>.
       </p>
     </footer>
