@@ -17,6 +17,27 @@
     list-style: none;
 }
 
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+    inline-size: .5rem;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(50, 26, 67);
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #4b3ca6;
+    border-radius: .7rem;
+    border: 2px solid #4919967d;
+}
+
+/* Style the scrollbar when hovered */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #550fcf;
+}
+
 body {
     font-family: 'monteserrat', serif;
     line-height: 1.7;
@@ -54,4 +75,3 @@ header {
     z-index: 2;
     align-items: center;
 }
-
