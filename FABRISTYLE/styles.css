@@ -1,0 +1,64 @@
+/* ====== GENERAL STYLING ======= */
+:root {
+    --color-primary: #F7F6F8;
+    --color-secondary: #DADAE2;
+    --color-button: #4E46B4;
+    --color-title: #413A96;
+    --color-tertiary: #19191F;
+    --color-text: #3F3F43;
+    --transition: all 400ms ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'monteserrat', serif;
+    line-height: 1.7;
+    background: #fff;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+li a {
+    color: var(--color-primary);
+    transition: var(--transition);
+    font: bold;
+}
+
+a:hover {
+    color: #fff;
+}
+
+img {
+    inline-size: 100%;
+    object-fit: cover;
+}
+
+/* ====== NAVIGATION ======= */
+header {
+    inline-size: 100vw;
+    block-size: 4rem;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    z-index: 2;
+    align-items: center;
+}
+
+/* nav {
+    block-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    inline-size: 100%;
+} */
