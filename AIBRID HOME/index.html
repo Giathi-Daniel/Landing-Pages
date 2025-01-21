@@ -444,62 +444,75 @@
     <p class="text-green-500 text-center py-5">Still under development! Work in Progress...</p>
 
     <!-- ====== FOOTER SECTION ====== -->
-    <footer class="w-full md:px-[6rem] px-[1rem] py-[2rem] bg-[url('./images/footer-bg.jpeg')] bg-cover h-full bg-center">  
-        <div class="absolute inset-0 opacity-50 z-10" style="background-color: var(--color-shadow-overlay);""></div>
-        <nav class="relative z-20 flex md:flex-row flex-col items-start md:items-center justify-between mb-[3rem]">
-            <div>
-                <h1 class="font-bold uppercase text-white">logo</h1>
-            </div>
-            <div class="text-white flex md:flex-row flex-col md:items-center items-start md:gap-6 gap-2 text-sm mt-2 mb-3">
-                <p>About</p>
-                <p>Events</p>
-                <p>FAQ</p>
-                <p>Blog</p>
-                <p>Terms</p>
-                <p>Privacy</p>
-                <p>Contact</p>
-            </div>
-            <div class="flex items-center gap-4">
-                <img src="./images/insta.png" alt="instagram" class="w-6 cursor-pointer">
-                <img src="./images/snapchat.png" alt="snapchat" class="w-6 cursor-pointer">
-                <img src="./images/facebook.png" alt="facebook" class="w-6 cursor-pointer">
-                <img src="./images/youtube.png" alt="youtube" class="w-6 cursor-pointer">
-            </div>
-        </nav>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="flex flex-col space-y-2">
-                <div class="text-white flex items-center gap-2">
-                    <img src="./images/phone.png" alt="phone" class="w-5">
-                    Phone:
-                </div>
-                <p class="text-gray-300 text-sm">0739823323 (Muna)</p>
-                <p class="text-gray-300 text-sm">0700943400 (Hayat)</p>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div class="text-white flex items-center gap-2">
-                    <img src="./images/email.png" alt="email" class="w-5">
-                    Email:
-                </div>
-                <p class="text-gray-300 text-sm">contact@aibridmusic.com</p>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div class="text-white flex items-center gap-2">
-                    <img src="./images/location.png" alt="location" class="w-5">
-                    Location:
-                </div>
-                <p class="text-gray-300 text-sm">123 District, Apapa, Lagos</p>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div class="text-white flex items-center gap-2">
-                    <img src="./images/time.png" alt="time" class="w-5">
-                    Running Hours:
-                </div>
-                <p class="text-gray-300 text-sm">08:00AM - 04:00PM Daily</p>
-            </div>
+    <footer class="w-full md:px-[6rem] px-[1rem] py-[2rem] bg-[url('./images/footer-bg.jpeg')] bg-cover bg-center h-full relative">
+    <div class="absolute inset-0 bg-black opacity-40 z-10"></div> <!-- Darker overlay for better contrast -->
+
+    <div class="relative z-20 flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0">
+        <!-- Logo Section -->
+        <div class="flex justify-center">
+            <h1 class="font-bold uppercase text-white text-2xl">Logo</h1>
         </div>
-        <hr class="bg-gray-400 mt-3 mb-3" />
-        <p class="text-gray-400 text-sm py-3 text-center">Aibrid &copy; 2025. Made by BlackShark</p>
-    </footer>
+
+        <!-- Navigation Links -->
+        <div class="flex flex-wrap md:flex-nowrap justify-center md:gap-6 gap-4 text-white text-sm md:text-base mt-2">
+            <p class="cursor-pointer hover:text-orange-500 transition-colors duration-300">About</p>
+            <p class="cursor-pointer hover:text-orange-500 transition-colors duration-300">Events</p>
+            <p class="cursor-pointer hover:text-orange-500 transition-colors duration-300">FAQ</p>
+            <p class="cursor-pointer hover:text-orange-500 transition-colors duration-300">Blog</p>
+            <p class="cursor-pointer hover:text-orange-500 transition-colors duration-300">Terms</p>
+            <p class="cursor-pointer hover:text-orange-500 transition-colors duration-300">Privacy</p>
+            <p class="cursor-pointer hover:text-orange-500 transition-colors duration-300">Contact</p>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="flex items-center gap-6 justify-center mt-4 md:mt-0">
+            <img src="./images/insta.png" alt="Instagram" class="w-6 cursor-pointer hover:scale-110 transition-transform duration-300">
+            <img src="./images/snapchat.png" alt="Snapchat" class="w-6 cursor-pointer hover:scale-110 transition-transform duration-300">
+            <img src="./images/facebook.png" alt="Facebook" class="w-6 cursor-pointer hover:scale-110 transition-transform duration-300">
+            <img src="./images/youtube.png" alt="YouTube" class="w-6 cursor-pointer hover:scale-110 transition-transform duration-300">
+        </div>
+    </div>
+
+    <!-- Contact Information Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mt-8">
+        <div class="flex flex-col space-y-2">
+            <div class="text-white flex items-center gap-2">
+                <img src="./images/phone.png" alt="phone" class="w-5">
+                <span>Phone:</span>
+            </div>
+            <p class="text-gray-300 text-sm">0739823323 (Muna)</p>
+            <p class="text-gray-300 text-sm">0700943400 (Hayat)</p>
+        </div>
+
+        <div class="flex flex-col space-y-2">
+            <div class="text-white flex items-center gap-2">
+                <img src="./images/email.png" alt="email" class="w-5">
+                <span>Email:</span>
+            </div>
+            <p class="text-gray-300 text-sm">contact@aibridmusic.com</p>
+        </div>
+
+        <div class="flex flex-col space-y-2">
+            <div class="text-white flex items-center gap-2">
+                <img src="./images/location.png" alt="location" class="w-5">
+                <span>Location:</span>
+            </div>
+            <p class="text-gray-300 text-sm">123 District, Apapa, Lagos</p>
+        </div>
+
+        <div class="flex flex-col space-y-2">
+            <div class="text-white flex items-center gap-2">
+                <img src="./images/time.png" alt="time" class="w-5">
+                <span>Running Hours:</span>
+            </div>
+            <p class="text-gray-300 text-sm">08:00AM - 04:00PM Daily</p>
+        </div>
+    </div>
+
+    <hr class="bg-gray-400 mt-8 mb-8" />
+
+    <p class="text-gray-400 text-sm py-3 text-center">Aibrid &copy; 2025. Made by BlackShark</p>
+</footer>
 
     <!-- ====== SCRIPT JS ====== -->
     <script src="script.js"></script>
