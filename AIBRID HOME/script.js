@@ -47,12 +47,16 @@ const swiper = new Swiper('.swiper', {
     disableOnInteraction: false, 
   },
   breakpoints: {
-    768: {
+    540: {
       slidesPerView: 1,
+      spaceBetween: 5,
+    },
+    768: {
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 20,
     },
   },
