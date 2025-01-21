@@ -4,7 +4,7 @@
     --color-secondary: #DADAE2;
     --color-button: #4E46B4;
     --color-title: #413A96;
-    --color-tertiary: #19191F;
+    --color-heading: #19191F;
     --color-text: #3F3F43;
     --transition: all 400ms ease;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 section {
-    padding: 6rem 0;
+    padding: 5rem 0;
 }
 
 li a {
@@ -55,10 +55,3 @@ header {
     align-items: center;
 }
 
-/* nav {
-    block-size: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    inline-size: 100%;
-} */
