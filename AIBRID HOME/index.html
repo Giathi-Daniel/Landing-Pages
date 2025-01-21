@@ -28,69 +28,72 @@
 </head>
 <body>
     <!-- ====== HEADER ====== -->
-    <header class="w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
-        <div class="absolute inset-0 opacity-30 z-10" style="background-color: var(--color-shadow-overlay);"></div>
-        <nav class="relative z-20 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
-            <!-- Logo Section -->
-            <div>
-                <h1 class="font-bold uppercase text-white">Logo</h1>
-            </div>
-    
-            <!-- Desktop Navigation Links and Button -->
-            <div class="hidden md:flex items-center gap-10">
-                <ul class="flex gap-10 text-white">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#contact" id="contact-link">Contact</a></li>
-                </ul>
-                <a href="#" class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
-            </div>
-    
-            <!-- Mobile Hamburger Button -->
-            <div class="md:hidden flex items-center z-30">
-                <button id="hamburger-icon" class="text-white focus:outline-none">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-            </div>
-    
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden absolute top-[2rem] left-[7rem] right-0 bg-black w-fit text-white p-4 hidden flex-col items-center gap-6 z-24">
-                <ul>
-                    <li><a href="#home" class="block">Home</a></li>
-                    <li><a href="#about" class="block">About</a></li>
-                    <li><a href="#events" class="block">Events</a></li>
-                    <li><a href="#contact" class="block">Contact</a></li>
-                </ul>
-                <a href="#" class="mt-2 bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
-            </div>
-        </nav>
-        <section class="relative z-11 flex flex-col justify-center items-center">
-            <div class="flex justify-center flex-col md:w-1/2 w-full text-center px-4">
-                <h4 class="md:text-lg text-white text-base">Hi, I am Aibrid</h4>
-                <h1 class="font-bold md:text-6xl text-3xl text-white">
-                    FEEL THE MUSIC WITH <span class="title">DJ AIBRID</span>
-                </h1>
-                <p class="mt-2 text-gray-300 ml-[-1rem] text-sm">
-                    (A sound engineer and Graduate of DJ Consequence's Vibes DJ Academy)
-                </p>
-            </div>
-    
-            <div class="mt-4 flex flex-wrap items-center gap-4 text-sm sm:gap-6 sm:text-base">
-                <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-primary font-semibold transition-all duration-300 w-full sm:w-auto">
-                    Book Me
-                </button>
-                <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-secondary font-semibold transition-all duration-300 w-full sm:w-auto">
-                    My Projects
-                </button>
-            </div>
-        </section>
-        <div class="relative z-20 flex items-center justify-center gap-3 mt-[4rem] cursor-pointer">
-            <span class="bg-white rounded-full w-2 h-2" style="background-color: var(--color-bg-button);"></span>
-            <span class="bg-white rounded-full w-2 h-2"></span>
-            <span class="bg-white rounded-full w-2 h-2"></span>
+<header class="w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
+    <div class="absolute inset-0 bg-black opacity-50 z-10"></div> <!-- Adjusted opacity for better visibility -->
+    <nav class="relative z-20 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
+        <!-- Logo Section -->
+        <div>
+            <h1 class="font-bold uppercase text-white">Logo</h1>
         </div>
-    </header>
+
+        <!-- Desktop Navigation Links and Button -->
+        <div class="hidden md:flex items-center gap-10">
+            <ul class="flex gap-10 text-white">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+            </ul>
+            <a href="#" class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <div class="md:hidden flex items-center z-30">
+            <button id="hamburger-icon" class="text-white focus:outline-none">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden absolute top-[2rem] left-[7rem] right-0 bg-black w-fit text-white p-4 hidden flex-col items-center gap-6 z-24">
+            <ul>
+                <li><a href="#home" class="block">Home</a></li>
+                <li><a href="#about" class="block">About</a></li>
+                <li><a href="#events" class="block">Events</a></li>
+                <li><a href="#contact" class="block">Contact</a></li>
+            </ul>
+            <a href="#" class="mt-2 bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
+        </div>
+    </nav>
+
+    <!-- == HERO SECTION == -->
+    <section class="relative z-11 flex flex-col justify-center items-center">
+        <div class="flex justify-center flex-col md:w-1/2 w-full text-center px-4">
+            <h4 class="md:text-lg text-white text-base">Hi, I am Aibrid</h4>
+            <h1 class="font-bold md:text-6xl text-3xl text-white">
+                FEEL THE MUSIC WITH <span class="title">DJ AIBRID</span>
+            </h1>
+            <p class="mt-2 text-gray-300 ml-[-1rem] text-sm">
+                (A sound engineer and Graduate of DJ Consequence's Vibes DJ Academy)
+            </p>
+        </div>
+
+        <div class="mt-4 flex flex-wrap items-center gap-4 text-sm sm:gap-6 sm:text-base">
+            <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-primary font-semibold transition-all duration-300 w-full sm:w-auto">
+                Book Me
+            </button>
+            <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-secondary font-semibold transition-all duration-300 w-full sm:w-auto">
+                My Projects
+            </button>
+        </div>
+    </section>
+    <div class="relative z-20 flex items-center justify-center gap-3 mt-[4rem] cursor-pointer">
+        <span class="bg-white rounded-full w-2 h-2" style="background-color: var(--color-bg-button);"></span>
+        <span class="bg-white rounded-full w-2 h-2"></span>
+        <span class="bg-white rounded-full w-2 h-2"></span>
+    </div>
+</header>
+
     
     <!-- Contact Us Modal -->
     <div id="contact-modal" class="fixed inset-4 z-50 bg-gray-800 bg-opacity-70 hidden items-center justify-center">
