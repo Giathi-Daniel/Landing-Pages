@@ -1,26 +1,30 @@
-import { useState } from 'react'
-import './index.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import NavBar from "./components/NavBar"
+import Footer from "./components/Footer"
+import Home from "./pages/Home"
+import Crop from "./pages/Crop"
+import Bulk from "./pages/Bulk"
+import Convert from "./pages/Convert"
+import Watermark from "./pages/Watermark"
+import Features from "./pages/Features"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <Router>
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/crop" element={<Crop />} />
+        <Route path="/bulk" element={<Bulk />} />
+        <Route path="/compress" element={<Convert />} />
+        <Route path="/watermark" element={<Watermark />} />
+        <Route path="/features" element={<Features />} />
+      </Routes>
+
+      <Footer />
+    </Router>
   )
 }
 
