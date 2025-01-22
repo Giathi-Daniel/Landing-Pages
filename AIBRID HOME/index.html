@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiBrid Home</title>
+    <title>Aibrid Home</title>
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
 
     <!-- ======= TAILWINDCSS CDN ======= -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,9 +29,9 @@
 </head>
 <body>
     <!-- ====== HEADER ====== -->
-    <header class="w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
-        <div class="absolute inset-0 opacity-30 z-10" style="background-color: var(--color-shadow-overlay);"></div>
-        <nav class="relative z-20 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
+    <header class="relative w-full px-8 py-8 bg-[url('./images/hero-bg.jpeg')] bg-cover bg-center h-[100vh]">
+        <div class="absolute inset-0 bg-black opacity-50 z-10"></div>
+        <nav class="relative z-30 flex items-center justify-between mb-[9rem] md:mx-6 mx-1">
             <!-- Logo Section -->
             <div>
                 <h1 class="font-bold uppercase text-white">Logo</h1>
@@ -55,17 +56,59 @@
             </div>
     
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="md:hidden absolute top-[2rem] left-[7rem] right-0 bg-black w-fit text-white p-4 hidden flex-col items-center gap-6 z-24">
-                <ul>
-                    <li><a href="#home" class="block">Home</a></li>
-                    <li><a href="#about" class="block">About</a></li>
-                    <li><a href="#events" class="block">Events</a></li>
-                    <li><a href="#contact" class="block">Contact</a></li>
-                </ul>
-                <a href="#" class="mt-2 bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300 cta-btn">Book Me</a>
+            <div 
+              id="mobile-menu" 
+              class="md:hidden absolute top-[2rem] left-[50%] right-0 mx-auto bg-gradient-to-br from-gray-800 via-black to-gray-900 text-white w-[50%] rounded-lg p-6 hidden flex-col items-center shadow-lg z-30"
+            >
+              <!-- Navigation Links -->
+              <ul class="flex flex-col gap-2 text-lg font-medium w-full items-start mb-4">
+                <li>
+                  <a 
+                    href="#home" 
+                    class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#about" 
+                    class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#events" 
+                    class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                  >
+                    Events
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="#contact" 
+                    class="block w-full text-center py-2 hover:text-orange-500 hover:bg-gray-700 rounded-md transition-all duration-300"
+                  >
+                    Contact
+                  </a>
+                </li>
+              </ul>
+            
+              <!-- Call to Action Button -->
+              <a 
+                href="#" 
+                class="mt-6 bg-gradient-to-r from-orange-500 via-red-500 to-purple-600 hover:from-orange-400 hover:to-purple-500 text-white font-semibold px-8 py-3 rounded-full shadow-md transition-transform duration-300 hover:scale-105"
+              >
+                Book Me
+              </a>
             </div>
+    
         </nav>
-        <section class="relative z-11 flex flex-col justify-center items-center">
+    
+        <!-- == HERO SECTION == -->
+        <section class="relative z-20 flex flex-col justify-center items-center">
             <div class="flex justify-center flex-col md:w-1/2 w-full text-center px-4">
                 <h4 class="md:text-lg text-white text-base">Hi, I am Aibrid</h4>
                 <h1 class="font-bold md:text-6xl text-3xl text-white">
@@ -76,14 +119,18 @@
                 </p>
             </div>
     
-            <div class="mt-4 flex flex-wrap items-center gap-4 text-sm sm:gap-6 sm:text-base">
-                <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-primary font-semibold transition-all duration-300 w-full sm:w-auto">
-                    Book Me
-                </button>
-                <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-secondary font-semibold transition-all duration-300 w-full sm:w-auto">
-                    My Projects
-                </button>
+            <div class="mt-4 flex md:flex-nowrap flex-wrap items-center gap-4 text-sm sm:gap-6 sm:text-base">
+              <!-- Book Me Button -->
+              <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-400 text-white font-semibold px-8 py-2 rounded-full transition-colors duration-300 w-full sm:w-auto text-center">
+                Book Me
+              </button>
+              
+              <!-- My Projects Button -->
+              <button class="rounded-full px-8 py-2 cursor-pointer text-white btn-secondary font-semibold transition-all duration-300 w-full sm:w-auto text-center">
+                My Projects
+              </button>
             </div>
+
         </section>
         <div class="relative z-20 flex items-center justify-center gap-3 mt-[4rem] cursor-pointer">
             <span class="bg-white rounded-full w-2 h-2" style="background-color: var(--color-bg-button);"></span>
@@ -91,6 +138,7 @@
             <span class="bg-white rounded-full w-2 h-2"></span>
         </div>
     </header>
+
     
     <!-- Contact Us Modal -->
     <div id="contact-modal" class="fixed inset-4 z-50 bg-gray-800 bg-opacity-70 hidden items-center justify-center">
@@ -116,24 +164,42 @@
     </div>
 
     <!-- ====== FEATURES SECTION ====== -->
-    <section class="w-full md:px-10 px-8 py-8 grid md:grid-cols-4 grid-cols-1 space-y-5">
-        <div class="text-center md:border-r px-4">
-            <h2 class="text-white font-semibold text-xl">10 <span style="color: var(--color-bg-button);">+</span></h2>
-            <p class="text-gray-500 text-sm">Years Experience</p>
+    <section class="w-full bg-gray-900 text-gray-100 py-12 px-6 sm:px-10 md:px-20">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <!-- Feature Item -->
+        <div class="text-center md:border-r md:border-gray-700 last:border-r-0 px-4">
+          <h2 class="text-4xl font-bold text-white">
+            10<span class="text-orange-500">+</span>
+          </h2>
+          <p class="text-gray-400 mt-2 text-lg">Years Experience</p>
         </div>
-        <div class="text-center md:border-r px-4">
-            <h2 class="text-white font-semibold text-xl">40 <span style="color: var(--color-bg-button);">+</span></h2>
-            <p class="text-gray-500 text-sm">Successful Events</p>
+    
+        <!-- Feature Item -->
+        <div class="text-center md:border-r md:border-gray-700 border-gray-700 last:border-r-0 px-4">
+          <h2 class="text-4xl font-bold text-white">
+            40<span class="text-orange-500">+</span>
+          </h2>
+          <p class="text-gray-400 mt-2 text-lg">Successful Events</p>
         </div>
-        <div class="text-center md:border-r px-4">
-            <h2 class="text-white font-semibold text-xl border-">120 <span style="color: var(--color-bg-button);">+</span></h2>
-            <p class="text-gray-500 text-sm">Satisfied Clients</p>
+    
+        <!-- Feature Item -->
+        <div class="text-center md:border-r md:border-gray-700 border-gray-700 last:border-r-0 px-4">
+          <h2 class="text-4xl font-bold text-white">
+            120<span class="text-orange-500">+</span>
+          </h2>
+          <p class="text-gray-400 mt-2 text-lg">Satisfied Clients</p>
         </div>
-        <div class="text-center">
-            <h2 class="text-white font-semibold text-xl">20 <span style="color: var(--color-bg-button);">+</span></h2>
-            <p class="text-gray-500 text-sm">Talented Team</p>
+    
+        <!-- Feature Item -->
+        <div class="text-center px-4">
+          <h2 class="text-4xl font-bold text-white">
+            20<span class="text-orange-500">+</span>
+          </h2>
+          <p class="text-gray-400 mt-2 text-lg">Talented Team</p>
         </div>
+      </div>
     </section>
+
 
     <!-- ====== SERVICES SECTION ====== -->
     <section id="services" class="md:px-10 px-8 py-8 bg-[url('./images/testimonial-bg.jpeg')] bg-top bg-cover">
@@ -177,57 +243,73 @@
     </section>
 
     <!-- ====== ABOUT SECTION ====== -->
-    <section id="about" class="md:px-10 px-8 py-10 bg-[url('./images/about-bg.jpeg')] bg-cover bg-center">
-        <div class="md:ml-[50%]">
-            <div class="absolute inset-0 opacity-100 z-10" style="background-color: var(--color-shadow-overlay);"></div>
-            <div class="relative z-20">
-                <h4 class="text-base mb-5 font-bold" style="color: var(--color-title);">
-                    More About A<span class="title">ibrid</span>
-                </h4>
-                <h1 class="text-white md:text-lg font-semibold">THE BIGGEST DISK JOCKEY & MUSIC PRODUCER IN TOWN</h1>
-                <p class="text-gray-300 text-sm mt-5">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. 
-                    Duis turpis nunc aliquam id nuncac convallis dictum nisi.
-                </p>
-                <p class="text-gray-300 text-sm mt-5">
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. 
-                    Duis turpis nunc aliquam id nuncac convallis dictum nisi.
-                </p>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-5 mb-8">
-                    <div class="flex items-center gap-2">
-                        <img src="./images/right-arrow.png" alt="right-arrow" class="w-5">
-                        <p class="text-gray-300 text-sm">Executive Event Production</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="./images/right-arrow.png" alt="right-arrow" class="w-5">
-                        <p class="text-gray-300 text-sm">Performance Artists</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="./images/right-arrow.png" alt="right-arrow" class="w-5">
-                        <p class="text-gray-300 text-sm">Custom Invite Creation</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="./images/right-arrow.png" alt="right-arrow" class="w-5">
-                        <p class="text-gray-300 text-sm">Audience Procurement</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="./images/right-arrow.png" alt="right-arrow" class="w-5">
-                        <p class="text-gray-300 text-sm">Event Theme Decor</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <img src="./images/right-arrow.png" alt="right-arrow" class="w-5">
-                        <p class="text-gray-300 text-sm">Custom Invite Creation</p>
-                    </div>
-                </div>
-
-                <button class="bg-gradient-to-r from-orange-600 to-purple-500 hover:from-orange-500 hover:to-purple-400 text-white font-semibold px-6 py-2 rounded-full transition-colors duration-300">Learn More</button>
-            </div>
+    <section
+      id="about"
+      class="relative bg-[url('./images/about-bg.jpeg')] bg-cover bg-center text-gray-100 py-16 px-6 sm:px-10 md:px-20"
+    >
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-l from-black to-transparent md:ml-[45%] bg-opacity-60"></div>
+    
+      <!-- Content -->
+      <div class="relative z-10 md:ml-[50%]">
+        <!-- Title -->
+        <h4 class="text-lg font-semibold text-orange-500 mb-4 tracking-wide">
+          More About <span class="text-purple-500">Aibrid</span>
+        </h4>
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight text-white mb-6">
+          The Biggest Disk Jockey & Music Producer in Town
+        </h1>
+    
+        <!-- Description -->
+        <p class="text-gray-300 text-base leading-relaxed mb-4">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat
+          purus. Duis turpis nunc, aliquam id nunc ac, convallis dictum nisi.
+        </p>
+        <p class="text-gray-300 text-base leading-relaxed mb-8">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat
+          purus. Duis turpis nunc, aliquam id nunc ac, convallis dictum nisi.
+        </p>
+    
+        <!-- Services -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Executive Event Production</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Performance Artists</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Custom Invite Creation</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Audience Procurement</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Event Theme Decor</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <img src="./images/right-arrow.png" alt="Arrow" class="w-6">
+            <p class="text-gray-300">Custom Invite Creation</p>
+          </div>
         </div>
+    
+        <!-- CTA Button -->
+        <button
+          class="bg-gradient-to-r from-orange-500 to-purple-500 hover:from-orange-400 hover:to-purple-400 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition-all duration-300"
+        >
+          Learn More
+        </button>
+      </div>
     </section>
 
+
     <!-- ====== EVENTS AND PROJECTS ====== -->
-    <section id="events" class="flex items-center flex-col space-y-5 md:px-[8rem] px-[1rem] py-[2rem] mt-10">
+    <section id="events" class="flex items-center flex-col space-y-5 md:px-[8rem] px-[2rem] py-[2rem] mt-10">
         <div class="text-center">
             <h4 class="text-base" style="color: var(--color-title);">
                 Event & Proje<span class="title">cts</span>
@@ -237,7 +319,7 @@
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
             </p>
         </div>
-        <div class="md:w-[90%] space-y-5 grid grid-row-3 mx-4">
+        <div class="md:w-[90%] w-full space-y-5 grid grid-row-3">
             <article class="flex flex-col md:flex-row items-center bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-700 shadow-lg justify-between gap-8 rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <!-- Date Section -->
                 <div class="flex-shrink-0 text-center md:text-left">
@@ -329,174 +411,133 @@
 
     <!-- ====== TESTIMONIALS SECTION ====== -->
     <section class="md:px-[8rem] px-[1rem] py-[2rem] bg-[url('./images/testimonial-bg.jpeg')] bg-top bg-cover">
-        <div class="text-center">
-            <h4 class="text-base" style="color: var(--color-title);">
-                Testimon<span class="title">ials</span>
-            </h4>
-            <h1 class="text-white md:text-lg font-semibold">WHAT MY CLIENTS & SUPPORTERS SAY</h1>
-            <p class="text-gray-500 text-sm md:w-3/4 md:ml-[3rem]">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
+      <div class="text-center">
+        <h4 class="text-base" style="color: var(--color-title);">
+          Testimon<span class="title">ials</span>
+        </h4>
+        <h1 class="text-white md:text-lg font-semibold">WHAT MY CLIENTS & SUPPORTERS SAY</h1>
+        <p class="text-gray-500 text-sm md:w-3/4 md:ml-[3rem]">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequatur maiores nulla quisquam.
+        </p>
+      </div>
+    
+      <!-- Swiper Slider -->
+      <div class="swiper mt-6">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide bg-gradient-to-b from-gray-800 to-gray-900 text-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-400 text-sm">
+              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum."
             </p>
-        </div>
-        <div class="swiper swiper-container mt-3">
-            <div class="swiper-wrapper flex md:flex-nowrap flex-wrap items-center justify-center gap-4 mt-3">
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user1.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">Micheal Smith</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user2.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">Kimberly Yung</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user3.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">James Ward</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user1.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">Micheal Smith</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user2.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">Kimberly Yung</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
-                <article class="swiper-slide flex items-center px-8 py-3 flex-col rounded-md md:w-[40%]" style="background: var(--color-bg);">
-                    <p class="text-gray-400">
-                        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Doneca feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum"
-                    </p>
-                    <div class="flex md:flex-nowrap flex-wrap items-start justify-between gap-6 mt-3">
-                        <div class="flex items-center justify-between gap-3">
-                            <img src="./images/user3.png" alt="micheal" class="w-12">
-                            <div class="flex items-start justify-between flex-col">
-                                <h3 class="text-white font-semibold">James Ward</h3>
-                                <p class="text-gray-500 text-sm">Manager, Escape</p>
-                            </div>
-                        </div>
-                        <img src="./images/quote.png" alt="quaotes" class="w-5">
-                    </div>
-                </article>
+            <div class="flex items-center mt-4">
+              <img src="./images/user1.png" alt="Michael" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-white font-semibold">Michael Smith</h3>
+                <p class="text-gray-500 text-sm">Manager, Escape</p>
+              </div>
             </div>
-
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide bg-gradient-to-b from-gray-800 to-gray-900 text-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-400 text-sm">
+              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum."
+            </p>
+            <div class="flex items-center mt-4">
+              <img src="./images/user2.png" alt="Kimberly" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-white font-semibold">Kimberly Yung</h3>
+                <p class="text-gray-500 text-sm">Manager, Escape</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide bg-gradient-to-b from-gray-800 to-gray-900 text-white p-6 rounded-lg shadow-lg">
+            <p class="text-gray-400 text-sm">
+              "Lorem ipsum dolor sit amet consectetur adipiscing elit. Donec a feugiat purus. Duis turpis nunc aliquam id nuncac convallis dictum."
+            </p>
+            <div class="flex items-center mt-4">
+              <img src="./images/user3.png" alt="James" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-white font-semibold">James Ward</h3>
+                <p class="text-gray-500 text-sm">Manager, Escape</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <p class="text-green-500 text-center py-5">Still under development! Work in Progress...</p>
-
     <!-- ====== FOOTER SECTION ====== -->
-    <footer class="w-full md:px-[6rem] px-[1rem] py-[2rem] bg-[url('./images/footer-bg.jpeg')] bg-cover h-full bg-center">  
-        <div class="absolute inset-0 opacity-50 z-10" style="background-color: var(--color-shadow-overlay);""></div>
-        <nav class="relative z-20 flex md:flex-row flex-col items-start md:items-center justify-between mb-[3rem]">
-            <div>
-                <h1 class="font-bold uppercase text-white">logo</h1>
-            </div>
-            <div class="text-white flex md:flex-row flex-col md:items-center items-start md:gap-6 gap-2 text-sm mt-2 mb-3">
-                <p>About</p>
-                <p>Events</p>
-                <p>FAQ</p>
-                <p>Blog</p>
-                <p>Terms</p>
-                <p>Privacy</p>
-                <p>Contact</p>
-            </div>
-            <div class="flex items-center gap-4">
-                <img src="./images/insta.png" alt="instagram" class="w-6 cursor-pointer">
-                <img src="./images/snapchat.png" alt="snapchat" class="w-6 cursor-pointer">
-                <img src="./images/facebook.png" alt="facebook" class="w-6 cursor-pointer">
-                <img src="./images/youtube.png" alt="youtube" class="w-6 cursor-pointer">
-            </div>
-        </nav>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div class="flex flex-col space-y-2">
-                <div class="text-white flex items-center gap-2">
-                    <img src="./images/phone.png" alt="phone" class="w-5">
-                    Phone:
-                </div>
-                <p class="text-gray-300 text-sm">0739823323 (Muna)</p>
-                <p class="text-gray-300 text-sm">0700943400 (Hayat)</p>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div class="text-white flex items-center gap-2">
-                    <img src="./images/email.png" alt="email" class="w-5">
-                    Email:
-                </div>
-                <p class="text-gray-300 text-sm">contact@aibridmusic.com</p>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div class="text-white flex items-center gap-2">
-                    <img src="./images/location.png" alt="location" class="w-5">
-                    Location:
-                </div>
-                <p class="text-gray-300 text-sm">123 District, Apapa, Lagos</p>
-            </div>
-            <div class="flex flex-col space-y-2">
-                <div class="text-white flex items-center gap-2">
-                    <img src="./images/time.png" alt="time" class="w-5">
-                    Running Hours:
-                </div>
-                <p class="text-gray-300 text-sm">08:00AM - 04:00PM Daily</p>
-            </div>
+    <footer class="w-full bg-[url('./images/footer-bg.jpeg')] bg-cover bg-center relative text-gray-100 py-12 px-6 sm:px-12 lg:px-20">
+      <div class="absolute inset-0 bg-black opacity-50 z-10"></div> <!-- Darker overlay for better contrast -->
+    
+      <div class="relative z-20 grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <!-- Logo & Tagline -->
+        <div class="flex flex-col items-center lg:items-start">
+          <h1 class="text-3xl font-bold uppercase">Logo</h1>
+          <p class="mt-4 text-gray-300 text-center lg:text-left">
+            Elevating experiences with music, events, and memorable moments.
+          </p>
         </div>
-        <hr class="bg-gray-400 mt-3 mb-3" />
-        <p class="text-gray-400 text-sm py-3 text-center">Aibrid &copy; 2025. Made by BlackShark</p>
+    
+        <!-- Navigation Links -->
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+          <div class="space-y-3 flex flex-col">
+              <a href="#" class="hover:text-orange-500 transition-colors">About</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Events</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">FAQ</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Blog</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Terms</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Privacy</a>
+              <a href="#" class="hover:text-orange-500 transition-colors">Contact</a>
+          </div>
+        </div>
+    
+        <!-- Contact Information -->
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Contact Us</h2>
+          <ul class="space-y-3">
+            <li class="flex items-center gap-2">
+              <img src="./images/phone.png" alt="Phone" class="w-5">
+              <span>0739823323 (Muna)</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./images/phone.png" alt="Phone" class="w-5">
+              <span>0700943400 (Hayat)</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./images/email.png" alt="Email" class="w-5">
+              <span>contact@aibridmusic.com</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <img src="./images/location.png" alt="Location" class="w-5">
+              <span>123 District, Apapa, Lagos</span>
+            </li>
+          </ul>
+        </div>
+    
+        <!-- Social Media & Hours -->
+        <div>
+          <h2 class="text-xl font-semibold mb-4">Follow Us</h2>
+          <div class="flex gap-4">
+            <img src="./images/insta.png" alt="Instagram" class="w-8 hover:scale-110 transition-transform">
+            <img src="./images/snapchat.png" alt="Snapchat" class="w-8 hover:scale-110 transition-transform">
+            <img src="./images/facebook.png" alt="Facebook" class="w-8 hover:scale-110 transition-transform">
+            <img src="./images/youtube.png" alt="YouTube" class="w-8 hover:scale-110 transition-transform">
+          </div>
+          <h2 class="text-xl font-semibold mt-8 mb-4">Running Hours</h2>
+          <p>08:00 AM - 04:00 PM Daily</p>
+        </div>
+      </div>
+    
+      <hr class="border-gray-200 mt-12 mb-8" />
+    
+      <p class="relative z-30 text-center text-sm text-gray-200">
+        &copy; 2025 Aibrid. Crafted with care by <span class="text-orange-500">BlackShark</span>.
+      </p>
     </footer>
+
 
     <!-- ====== SCRIPT JS ====== -->
     <script src="script.js"></script>

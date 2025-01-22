@@ -9,7 +9,7 @@ function closeMenu() {
 
 // Toggle menu on hamburger icon click
 hamburgerIcon.addEventListener("click", (e) => {
-    e.stopPropagation(); // Prevent click from bubbling to the document
+    e.stopPropagation(); 
     mobileMenu.classList.toggle("hidden");
 });
 
@@ -38,27 +38,28 @@ document.getElementById("close-modal").addEventListener("click", function () {
 });
 
 // SWIPERJS
-const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 20,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  spaceBetween: 20,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false, 
+  },
+  breakpoints: {
+    540: {
+      slidesPerView: 1,
+      spaceBetween: 5,
     },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
     },
-    loop: true,
-    breakpoints: {
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-        },
-        1024: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-        },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
+  },
 });
+
 
