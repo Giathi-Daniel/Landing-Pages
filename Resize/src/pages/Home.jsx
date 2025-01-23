@@ -53,7 +53,7 @@ const Home = () => {
       <Procedure />
 
       {/* FEATURES AND TOOLS */}
-      <section className="border border-b-borderLight border-t-0 border-l-0 px-4 space-y-20">
+      <section className="border border-b-borderLight border-t-0 border-l-0 px-2 space-y-20">
         {/* ==== RESIZE FEATURES ==== */}
         <div className="flex flex-col justify-center">
           <h1 className="text-white md:text-xl text-lg mb-8">Resize features</h1>

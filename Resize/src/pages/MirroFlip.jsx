@@ -58,7 +58,7 @@ const MirrorFlip = () => {
 
       {/* HOW-TO */}
       <section id="how-to" className="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-[3rem] py-10 px-4 mb-[-2rem]">
-        <div className="w-[90%] flex items-center justify-center">
+        <div className="md:w-[90%] w-full flex items-center justify-center">
           <img src="/images/mirror-flip.png" alt="features-image" className="border border-borderLight" />
         </div>
         <div className="flex flex-col items-center gap-6">

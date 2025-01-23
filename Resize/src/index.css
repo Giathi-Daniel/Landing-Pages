@@ -19,6 +19,10 @@
     --transition: all 400ms ease;
 }
 
+::-webkit-scrollbar-track {
+    background: var(--color-border);
+}
+
 html {
     scroll-behavior: smooth;
 }

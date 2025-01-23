@@ -58,7 +58,7 @@ const Crop = () => {
       <Procedure />
 
       {/* CROP AND TOOLS */}
-      <section className="md:py-1 flex items-center md:flex-row flex-col justify-center md:gap-[4rem] px-4 space-y-20">
+      <section className="md:py-1 mb-[-3rem] flex items-center md:flex-row flex-col justify-center md:gap-[4rem] px-4 space-y-20">
         <div className="md:w-[300%] h-auto border border-borderLight md:mt-[7rem]">
           <img src="/images/crop.jpeg" alt="crop-image" className="w-full h-auto object-cover" />
         </div>

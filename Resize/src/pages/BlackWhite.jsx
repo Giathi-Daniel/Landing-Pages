@@ -11,7 +11,7 @@ const BlackWhite = () => {
   
   return (
     <>
-      <section className="relative bg-dark px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
+      <section className="relative bg-dark px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between ">
         <div className="w-full">
           <p className="px-3 py-1 flex items-center text-white text-sm bg-secondary w-fit rounded-lg">Editor feature</p>
           <h1 className="text-5xl mt-[-1rem] font-bold text-white">Convert your images to black and white</h1>
@@ -58,7 +58,7 @@ const BlackWhite = () => {
 
       {/* HOW-TO */}
       <section id="how-to" className="grid md:grid-cols-2 grid-cols-1 md:gap-6 gap-[3rem] py-10 px-4 mb-[-2rem]">
-        <div className="w-[90%] flex items-center justify-center">
+        <div className="md:w-[90%] w-full flex items-center justify-center">
           <img src="/images/black-white.png" alt="features-image" className="border border-borderLight" />
         </div>
         <div className="flex flex-col items-center gap-6">
