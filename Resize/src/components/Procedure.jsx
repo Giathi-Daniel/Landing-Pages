@@ -1,7 +1,7 @@
 
 const Procedure = () => {
   return (
-    <section className="md:px-6 px-4 bg-darkLight space-y-16 border border-b-borderLight border-t-0 border-l-0">
+    <section className="px-4 bg-darkLight space-y-16 border border-b-borderLight border-t-0 border-l-0">
         <div className="space-y-3">
           <h1 className="text-white md:text-3xl text-2xl font-bold">Designed for simplicity</h1>
           <p className="text-text md:max-w-xl md:text-xl text-lg">Good things come in threes. Upload, resize, and bring your images to life with beautiful edits.</p>

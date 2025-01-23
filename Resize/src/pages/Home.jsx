@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative bg-dark md:px-6 px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
+      <section className="relative bg-dark px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
         <div className="w-full">
           <h1 className="text-5xl font-bold text-white">Resize your image</h1>
           <p className="mt-6 text-xl text-text md:max-w-lg">
@@ -54,7 +54,7 @@ const Home = () => {
       <Procedure />
 
       {/* FEATURES AND TOOLS */}
-      <section className="md:px-6 border border-b-borderLight border-t-0 border-l-0 px-4 space-y-20">
+      <section className="border border-b-borderLight border-t-0 border-l-0 px-4 space-y-20">
         {/* ==== RESIZE FEATURES ==== */}
         <div className="flex flex-col justify-center">
           <h1 className="text-white md:text-xl text-lg mb-8">Resize features</h1>
