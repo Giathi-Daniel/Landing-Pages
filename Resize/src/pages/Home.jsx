@@ -49,7 +49,6 @@ const Home = () => {
         </div>
       </section>
 
-
       <New />
       <Procedure />
 
