@@ -2,7 +2,7 @@
 
 const New = () => {
   return (
-    <div className="relative flex md:flex-row md:items-center md:space-x-4 justify-center py-2 lg:px-[6rem] px-4 bg-white md:h-12 h-16">
+    <div className="relative flex md:flex-row md:items-center md:space-x-4 justify-center py-2 px-4 bg-white md:h-12 h-16">
         <div className="w-[3rem] h-auto absolute top-[-1rem] ml-[-90%]">
             <img src="/images/coffee-standing.png" alt="coffee-standing image" className="w-full h-auto" />
         </div>

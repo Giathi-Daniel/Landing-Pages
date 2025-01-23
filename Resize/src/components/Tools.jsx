@@ -4,7 +4,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Tools = () => {
   return (
-    <div className="flex flex-col justify-center lg:px-[6rem] px-4 pb-[4rem]">
+    <div className="flex flex-col justify-center px-4 pb-[4rem]">
         <h1 className="text-white md:text-xl text-lg mb-8">More tools and features</h1>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 content-center">
