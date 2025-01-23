@@ -10,7 +10,7 @@ const Crop = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative bg-dark px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
+      <section className="relative bg-dark lg:px-[6rem] px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
         <div className="w-full">
           <h1 className="text-5xl font-bold text-white">Crop an image</h1>
           <p className="mt-6 text-xl text-text md:max-w-lg">
@@ -58,7 +58,7 @@ const Crop = () => {
       <Procedure />
 
       {/* CROP AND TOOLS */}
-      <section className="md:py-1 mb-[-3rem] flex items-center md:flex-row flex-col justify-center md:gap-[4rem] px-4 space-y-20">
+      <section className="md:py-1 mb-[-3rem] flex items-center md:flex-row flex-col justify-center md:gap-[4rem] lg:px-[6rem] px-4 space-y-20">
         <div className="md:w-[300%] h-auto border border-borderLight md:mt-[7rem]">
           <img src="/images/crop.jpeg" alt="crop-image" className="w-full h-auto object-cover" />
         </div>
@@ -79,7 +79,7 @@ const Crop = () => {
       </section>
 
       {/* TOOLS */}
-      <section className="flex flex-col justify-center px-4 mb-[-1rem]">
+      <section className="flex flex-col justify-center lg:px-[6rem] px-4 mb-[-1rem]">
         <h1 className="text-white md:text-xl text-lg mb-8">More tools and features</h1>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 content-center">
