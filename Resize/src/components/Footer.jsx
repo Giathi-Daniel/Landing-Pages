@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="flex flex-col md:flex-row md:items-center justify-between px-4 h-[5rem] py-4 text-white bg-secondary">
+    <footer className="flex flex-col md:flex-row md:items-center justify-between lg:px-[6rem] px-4 h-[5rem] py-4 text-white bg-secondary">
         <h1 className="text-base">&copy; <span className="font-bold">Resize</span>.com</h1>
         <div className="md:text-base text-sm flex gap-4">
             <a href="#" className="hover:underline transition-all">Privacy</a>
