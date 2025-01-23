@@ -20,7 +20,7 @@ function App() {
         <Route path="/crop" element={<Crop />} />
         <Route path="/bulk" element={<Bulk />} />
         <Route path="/compress" element={<Compress />} />
-        <Route path="/compress" element={<Convert />} />
+        <Route path="/convert" element={<Convert />} />
         <Route path="/watermark" element={<Watermark />} />
         <Route path="/features" element={<Features />} />
       </Routes>
