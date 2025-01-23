@@ -8,12 +8,10 @@ import Faqs from "../components/Faqs";
 import { FaArrowRight } from "react-icons/fa";
 import { CiVideoOn } from "react-icons/ci";
 
-
-
 const Home = () => {
   return (
     <>
-      {/* // HERO SECTION */}
+      {/* HERO SECTION */}
       <section className="relative bg-dark md:px-6 px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
         <div className="w-full">
           <h1 className="text-5xl font-bold text-white">Resize your image</h1>
@@ -55,7 +53,7 @@ const Home = () => {
       <New />
       <Procedure />
 
-      {/* // FEATURES AND TOOLS */}
+      {/* FEATURES AND TOOLS */}
       <section className="md:px-6 border border-b-borderLight border-t-0 border-l-0 px-4 space-y-20">
         {/* ==== RESIZE FEATURES ==== */}
         <div className="flex flex-col justify-center">
@@ -107,6 +105,7 @@ const Home = () => {
         <Tools />
       </section>
 
+      {/* FAQs */}
       <Faqs />
     </>
   )
