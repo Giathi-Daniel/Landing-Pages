@@ -9,6 +9,7 @@ import Watermark from "./pages/Watermark"
 import Compress from "./pages/Compress"
 import AddText from "./pages/AddText"
 import BlackWhite from "./pages/BlackWhite"
+import MirrorFlip from "./pages/MirroFlip"
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Route path="/watermark" element={<Watermark />} />
         <Route path="/add-text" element={<AddText />} />
         <Route path="/black-white" element={<BlackWhite />} />
+        <Route path="/mirror-flip" element={<MirrorFlip />} />
       </Routes>
 
       <Footer />
