@@ -37,7 +37,7 @@ const Faqs = () => {
     ]
 
     return (
-        <section className="px-4 flex md:flex-row flex-col items-start md:gap-[19rem] gap-4 bg-darkLight border border-b-borderLight border-t-0 border-l-0">
+        <section className="lg:px-[6rem] px-4 flex md:flex-row flex-col items-start md:gap-[19rem] gap-4 bg-darkLight border border-b-borderLight border-t-0 border-l-0">
             {/* FAQ HEADER */}
             <h1 className="text-white font-semibold text-3xl">FAQ</h1>
 
