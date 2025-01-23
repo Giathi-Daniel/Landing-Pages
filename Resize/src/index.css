@@ -58,3 +58,16 @@ img {
         opacity: 1;
     }
 }
+
+
+/* ==== MEDIA QUERIES ==== */
+@media screen and (min-width: 1024px) {
+    section {
+        padding-inline: 6rem !important;
+    }
+
+    .fit {
+        display: flex;
+        justify-content: center;
+    }
+}
