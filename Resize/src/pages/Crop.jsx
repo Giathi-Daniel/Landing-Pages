@@ -82,7 +82,7 @@ const Crop = () => {
       <section className="flex flex-col justify-center px-6 mb-[-1rem]">
         <h1 className="text-white md:text-xl text-lg mb-8">More tools and features</h1>
 
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-4 content-center">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 content-center">
           <div className="p-5 flex flex-col space-y-3 rounded-md border border-border">
               {/* image container */}
               <div className="w-[3rem] h-auto rounded-full border border-secondary flex justify-center">

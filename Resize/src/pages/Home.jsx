@@ -59,7 +59,7 @@ const Home = () => {
         <div className="flex flex-col justify-center">
           <h1 className="text-white md:text-xl text-lg mb-8">Resize features</h1>
 
-          <div className="grid md:grid-cols-4 grid-cols-1 gap-3 content-center">
+          <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-3 content-center">
             <div className="p-5 flex flex-col space-y-3 rounded-md border border-border">
               <div className="w-[3rem] h-auto rounded-full border border-secondary flex justify-center">
                 <img src="/images/icons/resize-icon.svg" alt="resize-icon" className="w-full h-auto p-3" />
