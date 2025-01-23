@@ -8,6 +8,7 @@ import Convert from "./pages/Convert"
 import Watermark from "./pages/Watermark"
 import Compress from "./pages/Compress"
 import AddText from "./pages/AddText"
+import BlackWhite from "./pages/BlackWhite"
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/convert" element={<Convert />} />
         <Route path="/watermark" element={<Watermark />} />
         <Route path="/add-text" element={<AddText />} />
+        <Route path="/black-white" element={<BlackWhite />} />
       </Routes>
 
       <Footer />
