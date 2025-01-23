@@ -14,6 +14,7 @@ export default {
         border: 'var(--color-border)',
         borderLight: 'var(--color-border-light)',
         tertiary: 'var(--color-tertiary)',
+        menu: 'var(--color-menu)',
       },
       transitionProperty: {
         all: 'var(--transition)',

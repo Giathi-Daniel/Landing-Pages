@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative bg-dark px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
+      <section className="relative z-0 bg-dark px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
         <div className="w-full">
           <h1 className="text-5xl font-bold text-white">Resize your image</h1>
           <p className="mt-6 text-xl text-text md:max-w-lg">
@@ -38,7 +38,6 @@ const Home = () => {
           <label className="cursor-pointer rounded-lg bg-transparent border border-border flex flex-col items-center justify-center gap-3 text-white px-5 py-3 w-full h-full">
             {/* Image */}
             <img src="/images/icons/upload-icon.svg" alt="resize-icon" className="w-32 h-32" />
-            
             <span className="text-lg">Drop an image or click <span className="text-secondary">here</span></span>
             <input
               type="file"
@@ -49,6 +48,7 @@ const Home = () => {
           </label>
         </div>
       </section>
+
 
       <New />
       <Procedure />
