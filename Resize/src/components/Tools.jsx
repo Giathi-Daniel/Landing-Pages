@@ -4,10 +4,10 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Tools = () => {
   return (
-    <div className="flex flex-col justify-center">
+    <div className="flex flex-col justify-center px-6 pb-[4rem]">
         <h1 className="text-white md:text-xl text-lg mb-8">More tools and features</h1>
 
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-3 content-center">
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-4 content-center">
         <div className="p-5 flex flex-col space-y-3 rounded-md border border-border">
             {/* image container */}
             <div className="w-[3rem] h-auto rounded-full border border-secondary flex justify-center">
