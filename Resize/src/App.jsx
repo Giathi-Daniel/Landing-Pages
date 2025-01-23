@@ -7,6 +7,7 @@ import Bulk from "./pages/Bulk"
 import Convert from "./pages/Convert"
 import Watermark from "./pages/Watermark"
 import Features from "./pages/Features"
+import Compress from "./pages/Compress"
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/crop" element={<Crop />} />
         <Route path="/bulk" element={<Bulk />} />
+        <Route path="/compress" element={<Compress />} />
         <Route path="/compress" element={<Convert />} />
         <Route path="/watermark" element={<Watermark />} />
         <Route path="/features" element={<Features />} />
