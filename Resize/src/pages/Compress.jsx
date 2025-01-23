@@ -12,7 +12,7 @@ const Compress = () => {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="bg-dark px-4 flex flex-col items-start justify-between space-y-6">
+      <section className="bg-dark lg:px-[6rem] px-4 flex flex-col items-start justify-between space-y-6">
         <div className="flex flex-col">
           <div className="w-full">
             <h1 className="text-3xl font-bold text-white">Compress images</h1>
@@ -68,7 +68,7 @@ const Compress = () => {
       <Procedure />
 
       {/* CROP AND TOOLS */}
-      <section className="flex items-start flex-col justify-center space-y-4 px-4 mb-[-8rem]">
+      <section className="flex items-start flex-col justify-center space-y-4 lg:px-[6rem] px-4 mb-[-8rem]">
         <h1 className="text-white font-semibold text-xl">Image compression</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-1 md:gap-[4rem]">
           <p className="text-lg text-text">
@@ -87,7 +87,7 @@ const Compress = () => {
       </section>
 
       {/* TOOLS */}
-      <section className="flex flex-col justify-center px-4 mb-[-1rem]">
+      <section className="flex flex-col justify-center lg:px-[6rem] px-4 mb-[-1rem]">
         <h1 className="text-white md:text-xl text-lg mb-8">More tools and features</h1>
 
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 content-center">
