@@ -1,0 +1,30 @@
+/* INTER FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* GENERAL STYLING */
+:root {
+  --color-bg: #ffff;
+  --color-secondary: rgb(121, 121, 121);
+  --color-text-btn: rgb(58, 43, 26);
+  --color-tertiary: rgb(242, 242, 242);
+  --color-bg-light: rgb(242, 242, 242);
+  --color-bg-btn: rgb(254, 123, 1);
+  --color-bg-dark: rgb(9, 9, 9);
+  --color-text: rgb(178, 178, 178);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  line-height: 1.7;
+}
