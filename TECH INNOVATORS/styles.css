@@ -152,3 +152,77 @@ footer a {
     color: #ffd700;
     text-decoration: none;
 }
+
+/* Buttons */
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.btn-primary {
+    background: #003366;
+    color: white;
+}
+
+.btn-secondary {
+    background: #f4f4f4;
+    color: #003366;
+    border: 2px solid #003366;
+}
+
+/* Features Grid */
+.feature-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.feature {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonial {
+    background: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #003366;
+    font-style: italic;
+}
+
+/* Newsletter */
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px 15px;
+    background: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
