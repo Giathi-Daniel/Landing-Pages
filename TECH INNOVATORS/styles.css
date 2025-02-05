@@ -1,0 +1,154 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container to center content */
+.container {
+    inline-size: 90%;
+    max-inline-size: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header and Navigation */
+header {
+    background: #003366;
+    color: #fff;
+    padding: 20px 0;
+    margin-block-end: 20px;
+}
+
+header h1 {
+    text-align: center;
+    margin-block-end: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-block-end: 30px;
+}
+
+.hero img {
+    inline-size: 80%;
+    max-inline-size: 800px;
+    block-size: auto;
+    margin-block-start: 15px;
+}
+
+/* Multimedia Section */
+.multimedia {
+    text-align: center;
+    margin-block-end: 30px;
+}
+
+/* Table Styling */
+table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    margin-block-end: 30px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: start;
+}
+
+th {
+    background-color: #003366;
+    color: #fff;
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-inline-size: 500px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin-block-start: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    inline-size: 100%;
+    padding: 10px;
+    margin-block-start: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    display: block;
+    inline-size: 100%;
+    background: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-block-start: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background: #00509e;
+}
+
+/* Footer Styling */
+footer {
+    background: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-block-start: 30px;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+}
