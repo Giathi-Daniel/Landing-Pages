@@ -16,9 +16,41 @@
 </head>
 <body>
     <!-- ====== HEADER ====== -->
+    <header class="mb-[4rem] bg-white md:px-8 px-6 shadow-lg fixed top-0 left-0 w-full z-50">
+      <nav class="py-4">
+        <div class="container flex items-center justify-between">
+          <a href="#" class="text-[var(--color-title)] text-2xl font-semibold">Tech Innovators</a>
+
+          <!-- Desktop Menu -->
+          <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)]">Home</a></li>
+            <li><a href="services.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)]">Services</a></li>
+            <li><a href="about.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)]">About</a></li>
+            <li><a href="contact.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)]">Contact</a></li>
+          </ul>
+
+          <!-- Hamburger Menu for Mobile -->
+          <div class="block md:hidden">
+            <button id="hamburger-menu" class="text-[var(--color-title)]">
+              <i class="fa fa-bars"></i> <!-- Hamburger Icon -->
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu (Hidden by default) -->
+      <div id="mobile-menu" class="md:hidden bg-white shadow-lg w-full px-6 py-4 hidden">
+        <ul class="flex flex-col space-y-4">
+          <li><a href="index.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)]">Home</a></li>
+          <li><a href="services.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)]">Services</a></li>
+          <li><a href="about.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)]">About</a></li>
+          <li><a href="contact.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)]">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
     <!-- ====== HERO SECTION ====== -->
-    <div class="container md:px-8 px-6 flex flex-col items-center justify-center space-y-4">
+    <div class="container mt-24 md:px-8 px-6 flex flex-col items-center justify-center space-y-4">
       <h2 class="bg-[var(--color-light-bg)] w-fit px-6 py-3 flex items-center rounded-full justify-center text-[var(--color-title)] font-semibold text-base">
         🌟 Our Story
       </h2>
@@ -49,20 +81,44 @@
         Our vision is to be at the forefront of technological innovation, fostering a community where individuals and organizations can come together to push the boundaries of what's possible in the tech industry. We aim to create an environment that encourages curiosity, creativity, and collaboration, empowering all members to make a lasting impact on the world of technology.
       </p>
     </div>
+
+    <!-- Wavy SVG -->
+    <div class="relative mt-28">
+      <div class="absolute inset-x-0 bottom-0">
+          <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="w-full h-full transform" preserveAspectRatio="none">
+              <rect width="100%" height="100%" fill="rgba(255, 255, 255)" />
+              <!-- Wavy path -->
+              <path d="M0 40C240 80 480 120 720 120C960 120 1200 80 1440 40V120H0V40Z" fill="rgba(52, 144, 220, 0.2)"></path>
+              <path d="M0 40C240 80 480 120 720 120C960 120 1200 80 1440 40" stroke-width="3" fill="none"></path>
+          </svg>
+      </div>
+  </div>
     
     <!-- ====== CTA-JOIN ====== -->
-    <section class="container px-6 mt-6 mb-6 flex flex-col items-center  bg-[var(--color-light-bg)]  justify-center space-y-4">
+    <section class="container px-6 mt-6 mb-6 flex flex-col items-center justify-center space-y-4">
       <h1 class="md:text-4xl font-semibold text-xl text-[var(--color-heading)]">Join Our Community</h1>
       <p class="text-lg mb-4">We're a community of tech enthusiasts, developers, and innovators.</p>
       <p class="text-lg mb-4">We're not just innovators, we're a community that's shaping the future of tech.</p>
       <button type="button" class="text-lg text-white bg-[var(--color-title)] hover:bg-[var(--color-bg-hover)] transition-[var(--transition)] rounded-full flex items-center font-semibold px-6 py-3">Join Our Community</button>
     </section>
 
+    <!-- Wavy SVG -->
+    <div class="relative mt-28">
+      <div class="absolute inset-x-0 bottom-0">
+          <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="w-full h-full transform" preserveAspectRatio="none">
+              <rect width="100%" height="100%" fill="rgba(255, 255, 255)" />
+              <!-- Wavy path -->
+              <path d="M0 40C240 80 480 120 720 120C960 120 1200 80 1440 40V120H0V40Z" fill="rgba(52, 144, 220, 0.2)"></path>
+              <path d="M0 40C240 80 480 120 720 120C960 120 1200 80 1440 40" stroke-width="3" fill="none"></path>
+          </svg>
+      </div>
+  </div>
+
     <!-- ====== FOOTER ====== -->
     <section class="container md:px-8 px-6">
         <div class="grid md:grid-cols-4 grid-cols-1 content-center md:gap-20 gap-6">
             <div class="space-y-4">
-                <a href="#" class="text-2xl font-bold text-[var(--color-title)] transition-[var(--transition)] hover:text-[var(--color-bg-hover)]">Tech Innovators</a>
+                <a href="index.html" class="text-2xl font-bold text-[var(--color-title)] transition-[var(--transition)] hover:text-[var(--color-bg-hover)]">Tech Innovators</a>
                 <p class="text-[var(--color-text)] text-base">
                     Empowering to innovate, learn, and grow together in the world of technology.
                 </p>
@@ -100,5 +156,7 @@
         </div>
         <p class="flex items-center justify-center pt-[4rem] text-[var(--color-text)]">&copy; 2025 Tech Innovators. All rights reserved.</p>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
