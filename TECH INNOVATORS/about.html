@@ -1,47 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech Innovators Hub | About Us</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovators - Home</title>
+
+    <!-- TAILWINDCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Tech Innovators Hub</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- ====== HEADER ====== -->
 
-  <main>
-    <section class="content">
-      <h2>About Us</h2>
-      <p>
-        Tech Innovators Hub is an energetic organization committed to shifting the future of the tech industry. We are dedicated to offering cutting-edge services, showcasing innovative projects, and providing valuable resources for IT professionals, tech enthusiasts, and students alike.
+    <!-- ====== HERO SECTION ====== -->
+    <div class="container md:px-8 px-6 flex flex-col items-center justify-center space-y-4">
+      <h2 class="bg-[var(--color-light-bg)] w-fit px-6 py-3 flex items-center rounded-full justify-center text-[var(--color-title)] font-semibold text-base">
+        🌟 Our Story
+      </h2>
+      <h1 class="text-[var(--color-heading)] md:text-4xl text-center md:text-start text-2xl font-bold">
+          About Tech Innovators
+      </h1>
+      <p class="text-[var(--color-text)] text-lg">
+        Empowering to innovate, learn, and grow together in the world of technology.
       </p>
-      <p>
-        Our mission is to empower businesses and individuals with the latest technology trends and solutions.
+    </div>
+
+    <!-- ====== OUR MISSION ====== -->
+    <div class="container mt-[5rem] md:px-8 px-6 flex flex-col items-center justify-center text-center space-y-4">
+      <h1 class="text-[var(--color-heading)] md:text-4xl text-center md:text-start text-2xl font-bold">
+        Our Mission
+      </h1>
+      <p class="text-[var(--color-text)] text-lg">
+        Our mission is to provide a platform that empowers individuals and organizations to innovate, learn, and grow in the ever-evolving world of technology. We strive to create opportunities for knowledge exchange, skill-building, and personal development, helping our members unlock their full potential and make a meaningful difference in the tech industry.
       </p>
+    </div>
+
+    <!-- ====== OUR VISION ====== -->
+    <div class="relative container mt-[5rem] md:px-8 px-6 flex flex-col items-center justify-center text-center space-y-4">
+      <h1 class="text-[var(--color-heading)] md:text-4xl text-center md:text-start text-2xl font-bold">
+        Our Vision
+      </h1>
+      <p class="text-[var(--color-text)] text-lg">
+        Our vision is to be at the forefront of technological innovation, fostering a community where individuals and organizations can come together to push the boundaries of what's possible in the tech industry. We aim to create an environment that encourages curiosity, creativity, and collaboration, empowering all members to make a lasting impact on the world of technology.
+      </p>
+    </div>
+    
+    <!-- ====== CTA-JOIN ====== -->
+    <section class="container px-6 mt-6 mb-6 flex flex-col items-center  bg-[var(--color-light-bg)]  justify-center space-y-4">
+      <h1 class="md:text-4xl font-semibold text-xl text-[var(--color-heading)]">Join Our Community</h1>
+      <p class="text-lg mb-4">We're a community of tech enthusiasts, developers, and innovators.</p>
+      <p class="text-lg mb-4">We're not just innovators, we're a community that's shaping the future of tech.</p>
+      <button type="button" class="text-lg text-white bg-[var(--color-title)] hover:bg-[var(--color-bg-hover)] transition-[var(--transition)] rounded-full flex items-center font-semibold px-6 py-3">Join Our Community</button>
     </section>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Tech Innovators Hub. All Rights Reserved.</p>
-      <p>
-        Follow us on 
-        <a href="https://www.twitter.com/techinnovatorshub" target="_blank">Twitter</a>,
-        <a href="https://www.linkedin.com/company/techinnovatorshub" target="_blank">LinkedIn</a>
-      </p>
-    </div>
-  </footer>
+    <!-- ====== FOOTER ====== -->
+    <section class="container md:px-8 px-6">
+        <div class="grid md:grid-cols-4 grid-cols-1 content-center md:gap-20 gap-6">
+            <div class="space-y-4">
+                <a href="#" class="text-2xl font-bold text-[var(--color-title)] transition-[var(--transition)] hover:text-[var(--color-bg-hover)]">Tech Innovators</a>
+                <p class="text-[var(--color-text)] text-base">
+                    Empowering to innovate, learn, and grow together in the world of technology.
+                </p>
+            </div>
+    
+            <div class="space-y-4">
+                <h2 class="text-[var(--color-heading)] font-semibold">Quick Links</h2>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">About</a></li>
+                    <li><a href="services.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Services</a></li>
+                    <li><a href="projects.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Projects</a></li>
+                    <li><a href="contact.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="space-y-4">
+                <h2 class="text-[var(--color-heading)] font-semibold">Resources</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Tech Blog</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Tech Stack</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Project Gallery</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Learning Paths</a></li>
+                </ul>
+            </div>
+    
+            <div class="space-y-4">
+                <h2 class="text-[var(--color-heading)] font-semibold">Connect With Us</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">X (Twitter)</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">LinkedIn</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">WhatsApp</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="flex items-center justify-center pt-[4rem] text-[var(--color-text)]">&copy; 2025 Tech Innovators. All rights reserved.</p>
+    </section>
 </body>
 </html>
