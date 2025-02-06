@@ -1,54 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tech Innovators Hub | Contact</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovators - Home</title>
+
+    <!-- TAILWINDCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Tech Innovators Hub</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- ====== HEADER ====== -->
 
-  <main>
-    <section class="content">
-      <h2>Contact Us</h2>
-      <p>If you have any questions or inquiries, please reach out to us using the form below.</p>
-      <form action="contact-process.php" method="post">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required />
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <input type="submit" value="Send Message" />
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Tech Innovators Hub. All Rights Reserved.</p>
-      <p>
-        Follow us on 
-        <a href="https://www.twitter.com/techinnovatorshub" target="_blank">Twitter</a>,
-        <a href="https://www.linkedin.com/company/techinnovatorshub" target="_blank">LinkedIn</a>
+    <!-- ====== HERO SECTION ====== -->
+    <div class="container md:px-8 px-6 flex flex-col items-center justify-center space-y-4">
+      <h2 class="bg-[var(--color-light-bg)] w-fit px-6 py-3 flex items-center rounded-full justify-center text-[var(--color-title)] font-semibold text-base">
+        🤝 Connect with us
+      </h2>
+      <h1 class="text-[var(--color-heading)] md:text-4xl text-center md:text-start text-2xl font-bold">
+          Get in Touch
+      </h1>
+      <p class="text-[var(--color-text)] text-lg md:w-[70%] text-center">
+        Have questions or want to join our community? We'd love to hear from you. Reach out through any of these channels.
       </p>
     </div>
-  </footer>
+
+    <!-- ====== OUR SOCIALS ====== -->
+    <section class="container mt-[5rem] md:px-8 px-6 grid grid-cols-1 md:grid-cols-3 place-content-center gap-6">
+      <div class="px-8 py-3 flex items-center justify-center gap-4 rounded-md shadow-md w-fit cursor-pointer hover:shadow-lg hover:transition-[var(--transition)]">
+        <i class="fa-brands fa-x-twitter text-[var(--color-heading)] md:text-4xl text-2xl"></i>
+        <div class="flex flex-col">
+          <h1 class="text-[var(--color-heading)] font-semibold text-lg hover:text-[var(--color-title)] hover:transition-[var(--transition)]">X (Twitter)</h1>
+          <p class="text-sm">Follow us for the latest updates and announcements</p>
+        </div>
+      </div>
+
+      <div class="px-8 py-3 flex items-center justify-center gap-4 rounded-md shadow-md w-fit cursor-pointer hover:shadow-lg hover:transition-[var(--transition)]">
+        <i class="fa-brands fa-linkedin text-[var(--color-heading)] md:text-4xl text-2xl"></i>
+        <div class="flex flex-col">
+          <h1 class="text-[var(--color-heading)] font-semibold text-lg hover:text-[var(--color-title)] hover:transition-[var(--transition)]">LinkedIn</h1>
+          <p class="text-sm">Join our professional network for career opportunities</p>
+        </div>
+      </div>
+
+      <div class="px-8 py-3 flex items-center justify-center gap-4 rounded-md shadow-md w-fit cursor-pointer hover:shadow-lg hover:transition-[var(--transition)]">
+        <i class="fa-brands fa-whatsapp text-[var(--color-heading)] md:text-4xl text-2xl"></i>
+        <div class="flex flex-col">
+          <h1 class="text-[var(--color-heading)] font-semibold text-lg hover:text-[var(--color-title)] hover:transition-[var(--transition)]">WhatsApp</h1>
+          <p class="text-sm">Join our community group for direct communication</p>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- ====== CTA-JOIN ====== -->
+    <div class="w-[90%] container px-10 py-5 mt-6 mb-6 flex flex-col items-center rounded-md bg-[var(--color-light-bg)] justify-center space-y-4">
+      <h1 class="md:text-2xl font-bold text-xl text-[var(--color-heading)]">Join Our Community</h1>
+      <p class="text-lg mb-4 text-center md:w-[90%]">Be part of a vibrant tech community! Join our WhatsApp group to connect with fellow members, stay updated on events, and get instant support.</p>
+      <button type="button" class="text-lg text-white bg-[var(--color-title)] hover:bg-[var(--color-bg-hover)] transition-[var(--transition)] rounded-md flex items-center px-6 py-3">Join WhatsApp Community</button>
+    </div>
+
+    <!-- ====== FOOTER ====== -->
+    <section class="container md:px-8 px-6">
+        <div class="grid md:grid-cols-4 grid-cols-1 content-center md:gap-20 gap-6">
+            <div class="space-y-4">
+                <a href="#" class="text-2xl font-bold text-[var(--color-title)] transition-[var(--transition)] hover:text-[var(--color-bg-hover)]">Tech Innovators</a>
+                <p class="text-[var(--color-text)] text-base">
+                    Empowering to innovate, learn, and grow together in the world of technology.
+                </p>
+            </div>
+    
+            <div class="space-y-4">
+                <h2 class="text-[var(--color-heading)] font-semibold">Quick Links</h2>
+                <ul class="space-y-2">
+                    <li><a href="about.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">About</a></li>
+                    <li><a href="services.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Services</a></li>
+                    <li><a href="projects.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Projects</a></li>
+                    <li><a href="contact.html" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="space-y-4">
+                <h2 class="text-[var(--color-heading)] font-semibold">Resources</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Tech Blog</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Tech Stack</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Project Gallery</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">Learning Paths</a></li>
+                </ul>
+            </div>
+    
+            <div class="space-y-4">
+                <h2 class="text-[var(--color-heading)] font-semibold">Connect With Us</h2>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">X (Twitter)</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">LinkedIn</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">WhatsApp</a></li>
+                    <li><a href="#" class="text-[var(--color-text)] hover:text-[var(--color-hover)] transition-[var(--transition)]">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="flex items-center justify-center pt-[4rem] text-[var(--color-text)]">&copy; 2025 Tech Innovators. All rights reserved.</p>
+    </section>
 </body>
 </html>
