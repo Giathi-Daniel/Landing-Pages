@@ -19,6 +19,8 @@
     --color-title: rgb(37, 99, 235);
     --color-heading: rgb(17, 24, 39);
     --color-bg-hover: rgb(12, 76, 213);
+    --color-light-hover: rgb(78, 130, 243);
+    --color-light-bg: rgb(239, 246, 255);
 
     --transition: all 400ms;
 }
@@ -41,4 +43,14 @@ body {
 
 section {
     padding: 3rem 0;
+}
+
+img {
+    inline-size: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+p {
+    color: var(--color-text);
 }

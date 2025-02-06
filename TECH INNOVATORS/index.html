@@ -8,21 +8,178 @@
     <!-- TAILWINDCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- FONTAWESOME CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- ====== HEADER ====== -->
+
+    <!-- ====== HERO SECTION ====== -->
+    <div class="relative container md:px-8 px-6 flex md:flex-row flex-col items-center justify-center gap-4">
+        <!-- Main content -->
+        <div class="flex flex-col space-y-4 w-full">
+            <h2 class="bg-[var(--color-light-bg)] w-fit px-6 py-3 flex items-center rounded-full justify-center text-[var(--color-title)] font-semibold text-base">
+                Welcome to Tech Innovators
+            </h2>
+            <h1 class="text-[var(--color-title)] md:text-7xl text-center md:text-start text-2xl font-bold">
+                Innovate. <br />
+                Create. <br />
+                Transform. <br />
+            </h1>
+            <p class="text-[var(--color-text)] font-base">
+                Join Tech Innovators premier community where innovation meets opportunity. 
+                Together, we build the future of technology.
+            </p>
+            <div class="flex items-center gap-4 w-full">
+                <button type="button" class="text-sm text-white bg-[var(--color-title)] hover:bg-[var(--color-bg-hover)] transition-[var(--transition)] rounded-md flex items-center font-semibold px-6 py-3">Join Now</button>
+                <button type="button" class="text-sm text-black bg-transparent border border-gray-200 hover:scale(1.1) transition-[var(--transition)] rounded-md flex items-center font-semibold px-6 py-3">Learn More</button>
+            </div>
+        </div>
+        <!-- Image -->
+        <div class="w-full">
+            <img src="images/hero-bg.jpg" class="rounded-md h-full" alt="hero-image">
+        </div>
+    </div>
+    
+    <!-- Wavy SVG -->
+    <div class="mt-16 h-32 overflow-hidden">
+        <div class="absolute inset-x-0 bottom-0">
+            <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg" class="w-full h-full transform" preserveAspectRatio="none">
+                <rect width="100%" height="100%" fill="rgba(255, 255, 255)" />
+                <!-- Wavy path -->
+                <path d="M0 40C240 80 480 120 720 120C960 120 1200 80 1440 40V120H0V40Z" fill="rgba(52, 144, 220, 0.2)"></path>
+                <path d="M0 40C240 80 480 120 720 120C960 120 1200 80 1440 40" stroke-width="3" fill="none"></path>
+            </svg>
+        </div>
+    </div>
+    
+    
+    <!-- ====== WHY JOIN US ====== -->
+    <section class="relative container md:px-8 px-6 md:space-y-10 space-y-4">
+        <div class="flex flex-col items-center justify-center space-y-4">
+            <h1 class="md:text-4xl font-semibold text-xl text-[var(--color-heading)]">Why Join Tech Innovators</h1>
+            <p class="md:text-xl text-lg text-center">Discover the benefits of being part of our thriving tech community (Tech Innovators).</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 place-content-center gap-6">
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Focused Learning</h1>
+                <p class="text-center">
+                    Specialized tracks in various tech domains to help you master your chosen field.
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Networking</h1>
+                <p class="text-center">
+                    Connect with like-minded peers and industry leaders
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Career Growth</h1>
+                <p class="text-center">
+                    Access to job opportunities and career development resources
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl text-center">Hands-on Experience</h1>
+                <p class="text-center">
+                    Practical workshops and training sessions to build your skills
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Competitions</h1>
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum.
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Mentorship</h1>
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum.
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Certifications</h1>
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum.
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Industry Projects</h1>
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, illum.
+                </p>
+            </div>
+        </div>   
+    </section>
+
+    <!-- ====== JOIN US ====== -->
+    <section class="relative container md:px-8 px-6 md:space-y-10 space-y-4 bg-[var(--color-light-bg)]">
+        <div class="flex flex-col items-center justify-center space-y-4">
+            <h1 class="md:text-4xl font-semibold text-xl text-[var(--color-heading)]">Join Tech Innovators</h1>
+            <p class="md:text-xl text-lg text-center">Be part of a vibrant community that's shaping the future of technology at Tech Innovators.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 place-content-center gap-6">
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-rocket bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Hands-on Learning</h1>
+                <p class="text-center">
+                    Gain practical experience through real-worl projects and workshops
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-regular fa-handshake bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Networking</h1>
+                <p class="text-center">
+                    Connect with like-minded peers and industry leaders
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-regular fa-lightbulb bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl text-center">Innovation</h1>
+                <p class="text-center">
+                    Practical workshops and training sessions to build your skills
+                </p>
+            </div>
+
+            <div class="rounded-md flex items-center flex-col justify-center shadow-lg hover:bg-[var(--color-light-bg)] space-y-3 transition-[var(--transition)] px-7 py-3">
+                <i class="fa-solid fa-bullseye bg-[var(--color-light-bg)] p-3 w-14 h-14 text-2xl flex items-center justify-center rounded-full"></i>
+                <h1 class="text-[var(--color-heading)] font-semibold text-xl">Career Growth</h1>
+                <p class="text-center">
+                    Access to job opportunities and career development resources
+                </p>
+            </div>
+        </div>   
+    </section>
+    
+    <!-- ====== CTA ====== -->
+    <div class="relative mt-6 mb-6 flex flex-col items-center justify-center space-y-4">
+        <button type="button" class="text-lg text-white bg-[var(--color-title)] hover:bg-[var(--color-bg-hover)] transition-[var(--transition)] rounded-full flex items-center font-semibold px-6 py-3">Become a Member</button>
+        <p>Join us in building the future of technology</p>
+    </div>
 
     <!-- ====== FOOTER ====== -->
-    <!-- ====== FOOTER ====== -->
-    <!-- ====== FOOTER ====== -->
-    <!-- ====== FOOTER ====== -->
-    <!-- ====== FOOTER ====== -->
-    <!-- ====== FOOTER ====== -->
-
-    <!-- ====== FOOTER ====== -->
-    <section class="container">
-        <div class="grid md:grid-cols-4 grid-cols-1 content-center gap-20">
+    <section class="container md:px-8 px-6 bg-[var(--color-light-bg)]">
+        <div class="grid md:grid-cols-4 grid-cols-1 content-center md:gap-20 gap-6">
             <div class="space-y-4">
                 <a href="#" class="text-2xl font-bold text-[var(--color-title)] transition-[var(--transition)] hover:text-[var(--color-bg-hover)]">Tech Innovators</a>
                 <p class="text-[var(--color-text)] text-base">
