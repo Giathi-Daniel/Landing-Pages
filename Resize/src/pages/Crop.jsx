@@ -2,11 +2,26 @@ import { Link } from "react-router-dom"
 
 import New from "../components/New";
 import Procedure from "../components/Procedure";
+import ImageCropper from "../components/ImageCropper";
 
 import { FaArrowRight } from "react-icons/fa";
 import { CiVideoOn } from "react-icons/ci";
 
 const Crop = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  // Handle image selection
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setSelectedImage(e.target.result); // Store image as base64
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+  
   return (
     <>
       {/* HERO SECTION */}
@@ -39,18 +54,18 @@ const Crop = () => {
           className="bg-darkLight w-full h-[450px] rounded-lg flex flex-col items-center justify-center p-8"
         >
           {/* Custom Input Button */}
-          <label className="flex flex-col items-center justify-center w-full h-full gap-3 px-5 py-3 text-white bg-transparent border rounded-lg cursor-pointer border-border">
-            {/* Image */}
-            <img src="/images/icons/upload-icon.svg" alt="resize-icon" className="w-32 h-32" />
-            
-            <span className="text-lg">Drop an image or click <span className="text-secondary">here</span></span>
-            <input
-              type="file"
-              name="image"
-              className="hidden"
-              accept="image/*"
-            />
+             <label className="flex flex-col items-center justify-center w-full h-full gap-3 px-5 py-3 text-white bg-transparent border rounded-lg cursor-pointer border-border">
+              {/* Image */}
+              <img src="/images/icons/upload-icon.svg" alt="resize-icon" className="w-32 h-32" />
+      
+              <span className="text-lg">
+                Drop an image or click <span className="text-secondary">here</span>
+              </span>
+              <input type="file" name="image" className="hidden" accept="image/*" onChange={handleImageChange} />
           </label>
+
+          {/* Show ImageCropper when an image is selected */}
+          {selectedImage && <ImageCropper imageSrc={selectedImage} />}
         </div>
       </section>
 
