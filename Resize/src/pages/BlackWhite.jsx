@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import New from "../components/New";
 import Procedure from "../components/Procedure";
 import { FaArrowRight } from "react-icons/fa";
@@ -9,7 +9,7 @@ const BlackWhite = () => {
   const [originalImage, setOriginalImage] = useState(null)
   const [processedImage, setProcessedImage] = useState(null)
   const [isProcessing, setIsProcessing] = useState(false)
-  const canvasRef = useRef(null)
+  // const canvasRef = useRef(null)
 
   // Load from localStorage on mount
   useEffect(() => {
