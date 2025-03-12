@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import Cropper from 'react-cropper';
 import "cropperjs/dist/cropper.css";
 
@@ -29,7 +29,7 @@ const ImageCropper = () => {
       {image && (
         <Cropper
           src={image}
-          style={{ height: 300, width: "100%" }}
+          style={{ blockSize: 300, inlineSize: "100%" }}
           initialAspectRatio={1}
           guides={true}
           ref={cropperRef}
