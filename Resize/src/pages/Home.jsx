@@ -10,17 +10,17 @@ const Home = () => {
   const [originalImage, setOriginalImage] = useState(null);
   const [resizedImage, setResizedImage] = useState(null);
   const [resizeMode, setResizeMode] = useState("pixel");
-  const [dimensions, setDimensions] = useState({ width: "", height: "" });
+  const [dimensions, setDimensions] = useState({ inlineSize: "", blockSize: "" });
   const [percentage, setPercentage] = useState(100);
   const [socialPreset, setSocialPreset] = useState("instagram");
   const fileInputRef = useRef(null);
 
   const socialMediaPresets = {
-    instagram: { width: 1080, height: 1080 },
-    facebook: { width: 1200, height: 630 },
-    twitter: { width: 1200, height: 675 },
-    linkedin: { width: 1200, height: 627 },
-    pinterest: { width: 1000, height: 1500 },
+    instagram: { inlineSize: 1080, blockSize: 1080 },
+    facebook: { inlineSize: 1200, blockSize: 630 },
+    twitter: { inlineSize: 1200, blockSize: 675 },
+    linkedin: { inlineSize: 1200, blockSize: 627 },
+    pinterest: { inlineSize: 1000, blockSize: 1500 },
   };
 
   const handleImageUpload = (e) => {
@@ -204,14 +204,14 @@ const Home = () => {
                 <input
                   type="number"
                   value={dimensions.width}
-                  onChange={(e) => setDimensions({ ...dimensions, width: e.target.value })}
+                  onChange={(e) => setDimensions({ ...dimensions, inlineSize: e.target.value })}
                   placeholder="Width (px)"
                   className="bg-darkLight text-white px-4 py-2 rounded-lg"
                 />
                 <input
                   type="number"
                   value={dimensions.height}
-                  onChange={(e) => setDimensions({ ...dimensions, height: e.target.value })}
+                  onChange={(e) => setDimensions({ ...dimensions, blockSize: e.target.value })}
                   placeholder="Height (px)"
                   className="bg-darkLight text-white px-4 py-2 rounded-lg"
                 />
