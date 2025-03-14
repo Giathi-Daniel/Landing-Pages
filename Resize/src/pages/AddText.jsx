@@ -1,55 +1,270 @@
-import { Link } from "react-router-dom"
-
+import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import New from "../components/New";
 import Procedure from "../components/Procedure";
-
 import { FaArrowRight } from "react-icons/fa";
-import { FiChevronDown } from "react-icons/fi";
-
 
 const AddText = () => {
-  
+  const [originalImage, setOriginalImage] = useState(null);
+  const [processedImage, setProcessedImage] = useState(null);
+  const [textConfig, setTextConfig] = useState({
+    content: "",
+    fontSize: 32,
+    color: "#ffffff",
+    x: 0.5,
+    y: 0.5,
+    background: "",
+    bgColor: "#00000080"
+  });
+  const canvasRef = useRef(null);
+  const [isEditing, setIsEditing] = useState(false);
+
+  // Load from localStorage
+  useEffect(() => {
+    const savedImage = localStorage.getItem("textImage");
+    const savedConfig = localStorage.getItem("textConfig");
+    
+    if (savedImage) setProcessedImage(savedImage);
+    if (savedConfig) setTextConfig(JSON.parse(savedConfig));
+  }, []);
+
+  const handleImageUpload = (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      setOriginalImage(e.target.result);
+      processImage(e.target.result);
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const processImage = (src, text = textConfig) => {
+    const img = new Image();
+    img.src = src;
+    
+    img.onload = () => {
+      const canvas = canvasRef.current;
+      canvas.width = img.width;
+      canvas.height = img.height;
+      
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0);
+      
+      if (text.content) {
+        drawText(ctx, text, img.width, img.height);
+      }
+      
+      const processed = canvas.toDataURL("image/png");
+      setProcessedImage(processed);
+      localStorage.setItem("textImage", processed);
+    };
+  };
+
+  const drawText = (ctx, config, imgWidth, imgHeight) => {
+    ctx.font = `${config.fontSize}px Arial`;
+    ctx.fillStyle = config.color;
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    // Calculate position
+    const x = imgWidth * config.x;
+    const y = imgHeight * config.y;
+
+    // Draw background
+    if (config.background) {
+      const textMetrics = ctx.measureText(config.content);
+      const padding = 10;
+      const bgHeight = config.fontSize + padding * 2;
+      const bgWidth = textMetrics.width + padding * 2;
+      
+      ctx.fillStyle = config.bgColor;
+      ctx.fillRect(
+        x - bgWidth / 2,
+        y - bgHeight / 2,
+        bgWidth,
+        bgHeight
+      );
+    }
+
+    // Draw text
+    ctx.fillStyle = config.color;
+    ctx.fillText(config.content, x, y);
+  };
+
+  const handleAddText = () => {
+    if (!originalImage) return;
+    processImage(originalImage, textConfig);
+    localStorage.setItem("textConfig", JSON.stringify(textConfig));
+    setIsEditing(false);
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.download = `text-overlay-${Date.now()}.png`;
+    link.href = processedImage;
+    link.click();
+    
+    // Cleanup
+    localStorage.removeItem("textImage");
+    localStorage.removeItem("textConfig");
+    setOriginalImage(null);
+    setProcessedImage(null);
+  };
+
+  const handlePositionChange = (position) => {
+    const positions = {
+      "top-left": [0.2, 0.2],
+      "top-center": [0.5, 0.2],
+      "top-right": [0.8, 0.2],
+      "center": [0.5, 0.5],
+      "bottom-left": [0.2, 0.8],
+      "bottom-center": [0.5, 0.8],
+      "bottom-right": [0.8, 0.8]
+    };
+    
+    setTextConfig(prev => ({
+      ...prev,
+      x: positions[position][0],
+      y: positions[position][1]
+    }));
+  };
+
   return (
     <>
       <section className="relative bg-dark px-4 border border-b-borderLight border-t-0 border-l-0 flex flex-col md:flex-row items-center justify-between h-[87vh]">
         <div className="w-full">
-          <p className="px-3 py-1 flex items-center text-white text-sm bg-secondary w-fit rounded-lg">Editor feature</p>
-          <h1 className="text-5xl mt-[-1rem] font-bold text-white">Add text to your images</h1>
-          <p className="mt-6 text-xl text-text md:max-w-lg">
-            Add a unique touch to your images and tell your story with our easy-to-use online image editor.
+          <p className="px-3 py-1 flex items-center text-white text-sm bg-secondary w-fit rounded-lg">
+            Editor feature
           </p>
-          <div className="flex items-center justify-start gap-3 mb-6">
-            <Link
-                to={'/crop/app'}
-                className="rounded-lg px-5 py-2 flex items-center justify-center bg-gray-800 text-white gap-2 hover:bg-border transition-all"
+          <h1 className="text-5xl mt-[-1rem] font-bold text-white">
+            Add text to your images
+          </h1>
+          
+          {/* Text Configuration Controls */}
+          {originalImage && (
+            <div className="mt-6 space-y-4">
+              <input
+                type="text"
+                value={textConfig.content}
+                onChange={(e) => setTextConfig(prev => ({...prev, content: e.target.value}))}
+                placeholder="Enter your text"
+                className="bg-darkLight text-white px-4 py-2 rounded-lg w-full"
+              />
+              
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="text-text">Font Size</label>
+                  <input
+                    type="number"
+                    value={textConfig.fontSize}
+                    onChange={(e) => setTextConfig(prev => ({...prev, fontSize: e.target.value}))}
+                    className="bg-darkLight text-white px-4 py-2 rounded-lg w-full"
+                  />
+                </div>
+                
+                <div>
+                  <label className="text-text">Text Color</label>
+                  <input
+                    type="color"
+                    value={textConfig.color}
+                    onChange={(e) => setTextConfig(prev => ({...prev, color: e.target.value}))}
+                    className="bg-darkLight rounded-lg w-full h-10"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="text-text">Background</label>
+                  <select
+                    value={textConfig.background}
+                    onChange={(e) => setTextConfig(prev => ({...prev, background: e.target.value}))}
+                    className="bg-darkLight text-white px-4 py-2 rounded-lg w-full"
+                  >
+                    <option value="">None</option>
+                    <option value="solid">Solid</option>
+                    <option value="bubble">Text Bubble</option>
+                  </select>
+                </div>
+                
+                {textConfig.background && (
+                  <div>
+                    <label className="text-text">BG Color</label>
+                    <input
+                      type="color"
+                      value={textConfig.bgColor}
+                      onChange={(e) => setTextConfig(prev => ({...prev, bgColor: e.target.value}))}
+                      className="bg-darkLight rounded-lg w-full h-10"
+                    />
+                  </div>
+                )}
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {["top-left", "top-center", "top-right", "center", "bottom-left", "bottom-center", "bottom-right"].map(pos => (
+                  <button
+                    key={pos}
+                    onClick={() => handlePositionChange(pos)}
+                    className="px-3 py-1 bg-darkLight rounded-lg text-white hover:bg-secondary transition-all"
+                  >
+                    {pos}
+                  </button>
+                ))}
+              </div>
+
+              <button
+                onClick={handleAddText}
+                className="px-4 py-2 bg-secondary rounded-lg text-white hover:bg-tertiary transition-all"
               >
-                Get started
-                <FaArrowRight />
-              </Link>
-              <a href="#features" className="rounded-lg px-5 py-2 flex items-center justify-center text-white gap-2 bg-transparent hover:bg-border transition-all">
-                Learn how
-                <FiChevronDown />
-              </a>
-          </div>
+                {isEditing ? "Update Text" : "Add Text"}
+              </button>
+            </div>
+          )}
         </div>
 
-        {/* Image + Input section */}
-        <div 
-          className="bg-darkLight w-full h-[450px] rounded-lg flex flex-col items-center justify-center p-8"
-        >
-          {/* Custom Input Button */}
-          <label className="cursor-pointer rounded-lg bg-transparent border border-border flex flex-col items-center justify-center gap-3 text-white px-5 py-3 w-full h-full">
-            {/* Image */}
-            <img src="/images/icons/upload-icon.svg" alt="resize-icon" className="w-32 h-32" />
-            
-            <span className="text-lg">Drop an image or click <span className="text-secondary">here</span></span>
-            <input
-              type="file"
-              name="image"
-              className="hidden"
-              accept="image/*"
-            />
-          </label>
+        {/* Image Preview Section */}
+        <div className="bg-darkLight w-full h-[450px] rounded-lg flex flex-col items-center justify-center p-8">
+          <canvas ref={canvasRef} className="hidden" />
+          
+          {processedImage ? (
+            <div className="relative w-full h-full group">
+              <img src={processedImage} alt="processed" className="w-full h-full object-contain" />
+              <button
+                onClick={handleDownload}
+                className="absolute bottom-4 right-4 px-4 py-2 bg-secondary hover:bg-tertiary text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity"
+              >
+                Download
+              </button>
+            </div>
+          ) : originalImage ? (
+            <div className="relative w-full h-full group">
+              <img src={originalImage} alt="original" className="w-full h-full object-contain" />
+              <button
+                onClick={() => {
+                  setOriginalImage(null);
+                  localStorage.removeItem("textImage");
+                }}
+                className="absolute top-4 right-4 px-3 py-1 bg-red-500 hover:bg-red-600 text-white rounded-lg"
+              >
+                Remove
+              </button>
+            </div>
+          ) : (
+            <label className="cursor-pointer rounded-lg bg-transparent border border-border flex flex-col items-center justify-center gap-3 text-white px-5 py-3 w-full h-full">
+              <img src="/images/icons/upload-icon.svg" alt="upload" className="w-32 h-32" />
+              <span className="text-lg">
+                Drop an image or click <span className="text-secondary">here</span>
+              </span>
+              <input
+                type="file"
+                onChange={handleImageUpload}
+                className="hidden"
+                accept="image/*"
+              />
+            </label>
+          )}
         </div>
       </section>
 
