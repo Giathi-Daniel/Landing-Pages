@@ -295,13 +295,13 @@ const Bulk = () => {
         <h1 className="text-white text-2xl">Bulk image resizing</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-1 md:gap-[4rem]">
           <p className="text-xl text-text">
-            Resize.com makes bulk image resizing easy. With an intuitive interface, it allows you to resize multiple images
+            SnapTools makes bulk image resizing easy. With an intuitive interface, it allows you to resize multiple images
             at once to specific dimensions, ensuring consistency across your visuals. Simultaneously, you can also compress 
             images and save on file size.
           </p>
           <p className="text-xl text-text">
             As an entirely online solution, there’s no need to download or install any software, 
-            making it accessible from any device with an internet connection. Best of all, Resize.com 
+            making it accessible from any device with an internet connection. Best of all, SnapTools 
             is completely free to use, making it the perfect tool for individuals and professionals seeking 
             a fast, reliable, and cost-effective way to resize images in bulk.
           </p>

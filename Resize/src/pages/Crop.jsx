@@ -30,7 +30,7 @@ const Crop = () => {
         <div className="w-full">
           <h1 className="text-5xl font-bold text-white">Crop an image</h1>
           <p className="mt-6 text-xl text-text md:max-w-lg">
-          Resize.com makes cropping images easy. Upload your image and capture the perfect frame.
+          SnapTools makes cropping images easy. Upload your image and capture the perfect frame.
           </p>
           <div className="flex items-center justify-start gap-3 mb-6">
             <Link
@@ -82,7 +82,7 @@ const Crop = () => {
           <div className="space-y-4">
             <h1 className="text-xl font-semibold text-white md:text-2xl">Cropping features</h1>
             <p className="text-base text-text md:text-lg">
-              Have you ever taken a photo where there is a part you would love to cut out? Well, the easiest way to fix that is to crop it! Resize.com makes that effortless. The process of cropping an image allows for the removal of unwanted elements from a picture. This way, you can capture the perfect shot every time. Use the Resize.com editor to manage the crop selection, image orientation, zooming, and size. It&apos;s simple and hassle-free.
+              Have you ever taken a photo where there is a part you would love to cut out? Well, the easiest way to fix that is to crop it! SnapTools makes that effortless. The process of cropping an image allows for the removal of unwanted elements from a picture. This way, you can capture the perfect shot every time. Use the SnapTools editor to manage the crop selection, image orientation, zooming, and size. It&apos;s simple and hassle-free.
             </p>
           </div>
           <div className="space-y-4">
