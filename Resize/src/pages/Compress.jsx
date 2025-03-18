@@ -227,10 +227,10 @@ const Compress = () => {
         <h1 className="text-white font-semibold text-xl">Image compression</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-1 md:gap-[4rem]">
           <p className="text-lg text-text">
-            Resize.com makes compressing your images quick and effortless. High-resolution image files, 
+            SnapTools makes compressing your images quick and effortless. High-resolution image files, 
             such as those from cameras, can often be tens of megabytes - too large for many purposes, 
             especially uploading to a website. Smaller image files lead to faster load times and a better 
-            user experience. That’s why Resize.com uses lossy compression to reduce file sizes by removing 
+            user experience. That’s why SnapTools uses lossy compression to reduce file sizes by removing 
             parts of the image data that are less noticeable to the human eye.
           </p>
           <p className="text-lg text-text">

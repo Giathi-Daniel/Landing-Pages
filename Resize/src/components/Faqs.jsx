@@ -11,7 +11,7 @@ const Faqs = () => {
 
     const faqs = [
         {
-            question: "What's Resize.com?",
+            question: "What's SnapTools?",
             answer: "Well, it's an image resizer and editor packed into one convenient and free app. There are no subscriptions and you don't need to register an account. Simply resize your images on the fly!"
         },
         {
@@ -20,19 +20,19 @@ const Faqs = () => {
         },
         {
             question: "Are my pictures safe?",
-            answer: "Privacy concerns? We hear you! With Resize.com, images never leave your device since our editor does all the work locally in your web browser. Technically, your images never reach our server. We do collect some stats to improve and monitor our app. That's it!",
+            answer: "Privacy concerns? We hear you! With SnapTools, images never leave your device since our editor does all the work locally in your web browser. Technically, your images never reach our server. We do collect some stats to improve and monitor our app. That's it!",
         },
         {
             question: "Is image quality affected?",
             answer: "Without getting too technical, we resize and compress images with lossy compression. A compression method where the image file is compressed to maintain visual quality almost identical to the original. Although some data is lost in the process, the difference is often undetectable to the human eye, making lossy compression ideal for web use, where smaller files improve loading times and save storage space.                    Examples of formats using lossy compression include JPEG and WebP."
         },
         {
-            question: "Is Resize.com a free application?",
+            question: "Is SnapTools a free application?",
             answer: "It's a free app! But we do have to pay our landlord (our hosting company), so we may show ads or promote affiliate offers. We hope they don't distract you from your edits."
         },
         {
             question: "How do I contact you?",
-            answer: "We would love to hear from you! For feedback, bugs, feature requests, and collaborations, please email anonymousbrat@duck.com or message us on X where we also post some cool stats. Do follow along!"
+            answer: "We would love to hear from you! For feedback, bugs, feature requests, and collaborations, please email anonymousbrat@duck.com. Do follow along!"
         },
     ]
 

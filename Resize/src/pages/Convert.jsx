@@ -235,14 +235,14 @@ const Convert = () => {
         <h1 className="text-xl font-semibold text-white">Image converter</h1>
         <div className="grid md:grid-cols-2 grid-cols-1 gap-1 md:gap-[4rem]">
           <p className="text-lg text-text">
-            Resize.com eliminates the hassle of managing different file types, giving 
-            you a fast, seamless way to convert any image to JPG, PNG, or WebP. With Resize.com, 
+            SnapTools eliminates the hassle of managing different file types, giving 
+            you a fast, seamless way to convert any image to JPG, PNG, or WebP. With SnapTools, 
             converting your images has never been easier. Simply upload your images, select your format, 
             and convert them with just two clicks.
           </p>
           <p className="text-lg text-text">
             Certain projects require images in specific formats, and that&apos;s 
-            where Resize.com&apos;s image converter can help. Need to reduce file size? Convert to 
+            where SnapTools&apos;s image converter can help. Need to reduce file size? Convert to 
             JPG for lightweight images. Working on HD graphics? Choose PNG for crisp, high-resolution 
             visuals. Want modern, web-optimized files? Select WebP for superior compression and performance.
           </p>
