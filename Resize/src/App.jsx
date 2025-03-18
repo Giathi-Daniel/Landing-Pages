@@ -10,6 +10,7 @@ import Compress from "./pages/Compress"
 import AddText from "./pages/AddText"
 import BlackWhite from "./pages/BlackWhite"
 import MirrorFlip from "./pages/MirroFlip"
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
 
@@ -30,6 +31,9 @@ function App() {
       </Routes>
 
       <Footer />
+
+      {/* Vercel Analytics */}
+      <Analytics />
     </Router>
   )
 }
